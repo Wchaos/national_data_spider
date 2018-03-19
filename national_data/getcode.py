@@ -69,8 +69,8 @@ def parse(content, level, parent_code):
         zhibiao_list.append(zhibiao_dict)
 
 def get_zhibiao_list():
-    # if not os.path.exists('page_source.html'):
-    #     get_page()
+    if not os.path.exists('./national_data/page_source.html'):
+        get_page()
     with codecs.open('./national_data/page_source.html', 'r', 'utf-8') as f:
         content = f.read()
         parse(content, level=1, parent_code="A")
