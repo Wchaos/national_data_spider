@@ -1,0 +1,822 @@
+<!DOCTYPE html><html xmlns="http://www.w3.org/1999/xhtml"><head>
+<meta charset="utf-8" />
+
+
+
+
+
+
+<script id="allmobilize" charset="utf-8" src="http://a.yunshipei.com/3cf4bf099041a90552a48c9d178339b6/allmobilize.min.js"></script><style type="text/css"></style>
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+<link rel="alternate" media="handheld" href="#" />
+
+<link rel="shortcut icon" href="/images/favourite.ico" />
+<link rel="stylesheet" type="text/css" href="/css/base.css" />
+<link rel="stylesheet" type="text/css" href="/css/main.css" />
+<!--高级查询样式-->
+<link rel="stylesheet" type="text/css" href="/css/high.css" />
+<link rel="stylesheet" type="text/css" href="/js/nav/nav.css" />
+<!--树控件样式-->
+<link rel="stylesheet" type="text/css" href="/js/ztree/zTreeStyle/zTreeStyle.css" />
+<!--弹窗样式-->
+<link rel="stylesheet" type="text/css" href="/js/tips/css/tips.css" />
+<!--下拉样式-->
+<link rel="stylesheet" type="text/css" href="/js/dropList/css/dropList.css" />
+
+<script type="text/javascript" src="/modulejs/dynamic.jsp;jsessionid=C2EFB0BAA33704581ABB1358120D0C94"></script>
+<script type="text/javascript" src="/js/jquery.min.js"></script>
+<script type="text/javascript" src="/js/count/json2.js"></script>
+<script type="text/javascript" src="/js/nav/nav.js"></script>
+
+<!--引入树控件-->
+<script type="text/javascript" src="/js/ztree/js/jquery.ztree.core-3.5.js"></script>
+<script type="text/javascript" src="/js/ztree/jquery.ytree.js"></script>
+
+<!--手风琴-->
+<script type="text/javascript" src="/js/jquery-Accordion.js"></script>
+<!--分栏拖拽-->
+<script type="text/javascript" src="/js/jquery-ySplitbar.js"></script>
+<!-- js通用方法  存放一些常使用的工具函数 -->
+<script type="text/javascript" src="/js/common.js"></script>
+<!-- 打印 -->
+<script type="text/javascript" src="/js/print/jquery.PrintArea.js"></script>
+
+<script type="text/javascript" src="/js/dropList/js/dropList.js"></script>
+<!-- 下载 -->
+<script type="text/javascript" src="/js/download.js"></script>
+<script type="text/JavaScript" src="/js/md5.js"></script>
+<link rel="stylesheet" type="text/css" href="/js/chart/css/spectrum.css" />
+<link rel="stylesheet" type="text/css" href="/css/easyquery.css" />
+<script type="text/javascript" src="/js/loginBox.js"></script>
+<!--编辑,添加指标，筛选html-->
+<script type="text/javascript" src="/js/tipsDiv.js"></script>
+<!--弹窗-->
+<script type="text/javascript" src="/js/tips/js/jquery.zclip.min.js"></script>
+<script type="text/javascript" src="/js/tips/js/tipsBox.js"></script>
+<!--锁定表头-->
+<script type="text/javascript" src="/js/jquery.lock.js"></script>
+
+<!-- 公共js -->
+<script type="text/javascript" src="/js/main.js"></script>
+<script type="text/javascript" src="/js/cubetable.js"></script>
+
+<!--简单查询js-->
+<script type="text/javascript" src="/js/easyquery.js"></script>
+
+<!--收藏-->
+<script type="text/javascript" src="/js/favorite/favoritePop.js"></script>
+<script type="text/javascript" src="/js/favorite/favoriteAdd.js"></script>
+<script type="text/javascript" src="/js/ztree/js/jquery.ztree.exedit-3.5.min.js"></script>
+<script type="text/javascript" src="/js/chart/js/spectrum.js"></script>
+
+<!-- 分享 -->
+<script type="text/javascript" src="/js/share/sharediv.js"></script>
+
+<title>国家数据</title>
+</head>
+<body>
+	<!--打印div-->
+	<div style="display:none;">
+		<div id="printContent"></div>
+	</div>
+<!--页眉-->
+<!-- 2015/1/12 13:17 -->
+
+
+
+
+
+
+
+
+
+<div class="tc experience" style="left: 454px; display: none;">为了获得更好的用户体验，请使用火狐、谷歌、360浏览器极速模式或IE9及以上版本的浏览器。<em class="close"></em></div>
+
+<!--页眉-->
+<div id="top">
+	
+    <div class="top-wrap">
+        <div class="t-right mr5">
+            <ul>
+            	
+                <li><a href="/login.htm">登录</a></li>
+				<li class="line"></li>
+                <li><a href="/login.htm?m=toRegister">注册</a></li>
+                
+				<li class="line"></li>
+				<li><a href="/english">English</a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+<div id="header">
+    <h1>国家数据</h1>
+    
+	<!--nav start-->
+	<div id="nav">
+		<ul>
+			<li><a href="/index.htm"><span class="first">首页</span></a></li>
+			<li><a href="/easyquery.htm?cn=A01">月度数据</a></li>
+
+<li><a href="/easyquery.htm?cn=B01">季度数据</a></li>
+
+<li><a href="/easyquery.htm?cn=C01">年度数据</a></li>
+
+<li><a href="http://www.stats.gov.cn/tjsj/pcsj/" target="_blank">普查数据</a></li>
+
+<li><a rel="menuE01">地区数据<img src="js/nav/images/arrow-down.gif" class="downarrowpointer" style="width: 9px; height: 6px;" /></a></li>
+
+<li><a href="/staticreq.htm">部门数据</a></li>
+
+<li><a rel="menuG01">国际数据<img src="js/nav/images/arrow-down.gif" class="downarrowpointer" style="width: 9px; height: 6px;" /></a></li>
+
+<li><a href="/vchart.htm">可视化产品</a></li>
+
+<li><a href="/publish.htm?sort=1">出版物</a></li>
+
+<li><a href="/favorite.htm">我的收藏</a></li>
+
+<li class="last"><a href="/ifnormal.htm?m=help&amp;u=/files/html/help/help.html&amp;h=690">帮助</a></li>
+
+
+		</ul>
+	</div>
+	
+
+
+	<!-- nav end-->
+	
+    <div class="top-search">
+    	<span class="search-img-title"><a href="/search.htm"><img style="" src="/images/shuku.jpg" /></a></span>
+        <input type="text" value="如：2012年 北京 GDP" maxlength="60" class="search-text" id="keyword" />
+       <input type="button" value="搜索" class="search-btn" onclick="search()" />
+       <span class="img"></span>
+    </div>
+    
+    <div class="keyword">
+		<ul class="hot-index-container">
+			
+			<li><a href="/search.htm?s=GDP">GDP</a></li>
+			
+			<li><a href="/search.htm?s=CPI">CPI</a></li>
+			
+			<li><a href="/search.htm?s=总人口">总人口</a></li>
+			
+			<li><a href="/search.htm?s=社会消费品零售总额">社会消费品零售总额</a></li>
+			
+			<li><a href="/search.htm?s=粮食产量">粮食产量</a></li>
+			
+			<li><a href="/search.htm?s=PMI">PMI</a></li>
+			
+			<li><a href="/search.htm?s=PPI">PPI</a></li>
+			
+			<li><a href="/search.htm?s=城镇居民人均可支配收入">城镇居民人均可支配收入</a></li>
+			
+			<li><a href="/search.htm?s=农村居民家庭人均纯收入">农村居民家庭人均纯收入</a></li>
+			
+			<li><a href="/search.htm?s=城镇居民人均现金消费支出">城镇居民人均现金消费支出</a></li>
+			
+			<li><a href="/search.htm?s=gdp">gdp</a></li>
+			
+			<li><a href="/search.htm?s=生产总值">生产总值</a></li>
+			
+			<li><a href="/search.htm?s=cpi">cpi</a></li>
+			
+			<li><a href="/search.htm?s=人口">人口</a></li>
+			
+			<li><a href="/search.htm?s=ppi">ppi</a></li>
+			
+			<li><a href="/search.htm?s=房价">房价</a></li>
+			
+			<li><a href="/search.htm?s=国内生产总值">国内生产总值</a></li>
+			
+			<li><a href="/search.htm?s=pmi">pmi</a></li>
+			
+			<li><a href="/search.htm?s=工业增加值">工业增加值</a></li>
+			
+		</ul>
+	</div>
+	
+</div>
+<script type="text/javascript">
+	autoExperience();
+	function autoExperience(){
+		var _l = Math.ceil( $("#header").offset().left );
+		$(".experience").css({left:_l});
+	}
+	if($.cookie("experience") != "show"){
+		$(".experience").show();
+	}
+	
+	function search() {
+		var str = $("#keyword").val();
+		if ($.trim(str) != "" &amp;&amp; str != "如：2012年 北京 GDP") {
+			window.location = "/search.htm?s=" + str;
+		}else{
+			window.location = "/search.htm";
+		}
+	}
+	$("#keyword").focus(function(){
+		$(this).val() == "如：2012年 北京 GDP" &amp;&amp; $(this).val("");
+	}).blur(function(){
+		$.trim($("#keyword").val()) == "" &amp;&amp; $(this).val("如：2012年 北京 GDP");
+	}).keydown(function(e){
+		e.keyCode == 13 &amp;&amp; search();
+	});
+</script>
+
+<script type="text/javascript">
+$(function() {
+	/*导航菜单*/
+	menu("nav", "navbar");
+	autoExperience();
+	$(window).resize(function(){
+		autoExperience();
+	});
+	$(".experience .close").click(function(){
+		$(this).parent().hide();
+		$.cookie("experience","show");
+	});
+});
+</script>
+<!-- 引入自己页面的js文件及js功能代码 -->
+<script type="text/javascript">
+    var drawChart = new cubetable();
+	drawChart.DbCode("hgjd");
+	drawChart.RowCode("zb");
+	drawChart.ColCode("sj");
+	var ifautodelblanksj=true;
+	var zbpath=["zb"];
+	var zbcode="";
+	var rootTree = '[{"dbcode":"hgjd","id":"zb","isParent":true,"name":"指标","pid":"0","wdcode":"zb"}]';
+	if (rootTree != "" &amp;&amp; rootTree != "[]"){
+		rootTree = eval('(' + rootTree + ')');
+	} else {
+		rootTree = [];
+	}
+	
+	//恢复收藏夹全局变量
+	var reAcriontStr = '';
+	
+	// 下拉对象数组
+	var droplist = [];
+	
+	//锁定表头
+	var lockTable;
+
+	//收藏参数
+	var actionStr="";
+	var dbCode="";
+	var code="";
+	var wds="";
+	var cparams="";
+	var currentName="";
+	var isDefault = true;
+	
+	//复制
+	function copyTable(tableId){
+		var ifCheckbox = $("#initIndexCharts").is(":visible");
+		var thead = $("#"+tableId+" thead");
+		var data="";
+		for (var i=0;i&lt;droplist.length;i++){
+			var dp = droplist[i];
+			data+=dp.find(".wdName").text();
+			data+=dp.getItem().name;
+			data+='\t';
+			//alert(dp.getItem().name);
+			//alert(dp.find(".wdName").text());
+		}
+		data+="\n";
+		//取表头信息
+		for(var i=0;i&lt;$(thead).find("tr").length;i++){
+			if (ifCheckbox &amp;&amp; i==1) {
+				continue;
+			}
+			var tr = $(thead).find("tr").eq(i);
+			for(var j=0;j&lt;$(tr).find("th").length;j++){
+				if (ifCheckbox &amp;&amp; j==1) {
+					continue;
+				}
+				data+=$(tr).find("th").eq(j).text();
+				if(j&lt;$(tr).find("th").length-1){
+					data+='\t';
+				}
+			}
+			data+="\n";
+		}
+		//取tbody信息
+		var tbody = $("#"+tableId+" tbody");
+		for(var i=0;i&lt;$(tbody).find("tr").length;i++){
+			var tr = $(tbody).find("tr").eq(i);
+			for(var j=0;j&lt;$(tr).find("td").length;j++){
+				if (ifCheckbox &amp;&amp; j==1) {
+					continue;
+				}
+				data+=$(tr).find("td").eq(j).text();
+				if(j&lt;$(tr).find("td").length-1){
+					data+='\t';
+				}
+			}
+			data+="\n";
+		}
+		
+		// 取备注
+		$(".explist:eq(0) dl").each(function(i,e){
+			if (i==0){
+				data+="注:";
+				data+="\t";
+			} else {
+				data+="\t";
+			}
+			data+=$(this).text();
+			data+="\n";
+		  });
+		
+		data += '数据来源：国家统计局';
+		return data;
+	}
+	
+
+	//下载
+	function loadDownloadPop(){
+		var ifCheckbox = $("#initIndexCharts").is(":visible");
+		popDownload(ifCheckbox,"table_main");
+	}
+
+	//打印
+	function printData(){
+		setPrintFile();
+	}
+	//保存图片
+	function setPrintFile(){
+		$("#printContent").empty();
+		$("#printContent").append('&lt;img class="left" src="/theme/pic/logo.png" /&gt;');
+		
+		var wds='&lt;div width=400px;&gt;&lt;div style="float:right;"&gt;';
+		for ( var i = 0; i &lt; droplist.length; i++) {
+			var dt = droplist[i];
+			if(dt.getItem().sort==1){
+				wds = wds + dt.getWd().wdname + ":" + dt.getItem().name+"　　　";
+			}
+		}
+		$("#printContent").append(wds+'&lt;/div&gt;&lt;/div&gt;&lt;div class="clear"&gt;&lt;/div&gt;');
+		
+		if($("#initIndexCharts").is(":visible")){
+			$("#printContent").append($(myChart.getImage()).attr("id","printImage"));
+		}
+
+		$("#printContent").append($(".table_column").clone());
+				
+		if($(".expShow").is(":visible")){
+			$("#printContent").append($(".expShow").clone());
+		}
+		$("#printContent").append('&lt;div class="mt30 ml10"&gt;数据来源：国家统计局&lt;/div&gt;');
+		$("#printContent").printArea();
+	}
+	
+	$(function(){
+		// 初始化左侧树
+		initLeftTree();		
+	    
+
+		/*功能菜单*/
+		menu("rightmenu", "rightbar");
+
+
+		// 查询纬度信息
+		getwds(drawChart.RowCode(),drawChart.ColCode(),[]);	
+		
+	
+	//执行收藏恢复
+		if (reAcriontStr != "") {
+			var actions = eval("(" + reAcriontStr + ")");
+			if (!drawChart.isEmptyObject(actions)) {
+				drawChart.Action(actions);
+				$(".table-container").html(toHtml());
+				setTuOption();//作图
+			}
+		}
+
+		// 复制控制事件	
+		$("#copyA").zclip({
+			path : "/js/tips/js/ZeroClipboard.swf",
+			copy : function() {
+				var userid = "";
+				if (userid == "") {
+					popLogin("");
+					return false;
+				}
+				return copyTable("table_main");
+			},
+			afterCopy : function() {
+				alert("复制成功！");
+			}
+		});
+		//new锁定表头表尾
+
+		lockLeft = $(".main-right").offset().left + 1;
+		$(window).scroll(function() {
+			autoLock(lockLeft);
+		});
+		$(window).resize(function() {
+			lockLeft = $(".main-right").offset().left + 1;
+			autoLock(lockLeft);
+		});
+		//new锁定表头表尾end
+
+		//作图提示
+		$(".tishi").hover(function() {
+			$(".tishiBox").show();
+		}, function() {
+			$(".tishiBox").hide();
+		});
+	});
+
+	//分享
+	function share() {
+		$.tips({
+			title : "分享",
+			content : sharediv,
+			width : 250,
+			height : 100,
+			isCopy : false
+		});
+
+		//弹出分享后创建 分享脚本对象
+		var shareScript = document.createElement("script");
+		shareScript.type = "text/javascript";
+		shareScript.src = "http://v3.jiathis.com/code/jia.js?uid=1406773923170934";
+		document.getElementsByTagName("head")[0].appendChild(shareScript);
+	}
+	
+	function dowhere(act){
+		var userid = "";
+		if (userid==""){
+			popLogin("");
+			return;
+		}
+		$.ajax({
+			url : "/easyquery.htm",
+			type : "get",
+			dataType : "json",
+			data : {
+				"m" : "DoWhere",
+				"dbcode" : drawChart.DbCode(),
+				"act" :act
+			},
+			success : function(data1) {
+				if(data1.returncode==200){
+					alert(data1.returndata.msg);
+					if(act=="del"){
+						var rowcode=data1.returndata.rowcode;
+						var colcode=data1.returndata.colcode;
+						getwds(rowcode,colcode,[]);
+					}
+				}
+				else{
+					alert(data1.returndata);
+				}
+			} 
+		});
+		$(".createtype &gt; li").eq(0).click();
+	}
+	
+	//收藏
+	function saveFavorite(){
+		openFvrtWin('/easyquery.htm?m=saveFavorite','',true);
+	}
+</script>
+
+<!-- main 开始 -->
+<div id="main">
+    <!--navbar 开始-->
+    <div id="navbar">
+        <!-- site 开始 -->
+        <div id="site">
+            <div class="site-left"></div>
+            <div class="site-center">
+            	
+
+
+
+
+
+
+
+<ul class="ul-left pl15">
+	
+	<li class="selected"><strong class="left color1"><a href="/index.htm">首页</a></strong></li><li class="cur"><span class="left"></span> <a class="left" code="navcode" href="/easyquery.htm?cn=B01">季度数据</a><span class="left last"></span>  </li>
+	<li><strong class="left">简单查询</strong><span class="left"></span></li>
+</ul>
+            
+                <ul class="ul-right right">		
+                    <li><a href="javascript:loginOper(loadDownloadPop)" class="download mr20" title="下载"></a></li>
+                    <li><a id="copyA" class="copy mr20"></a></li>
+  					<li><a href="javascript:loginOper(printData)" class="print mr20" title="打印"></a></li>
+                    <li><a href="javascript:loginOper(share)" class="share mr15" title="分享"></a></li>
+                </ul>
+            </div>
+            <div class="site-right"></div>
+        </div>
+        <!-- site 结束 -->
+
+        <!-- subnav 开始 -->
+        <div id="subnav">
+            
+
+
+
+
+
+
+<ul class="ul-left left">
+	
+	<li class="simpleQuery"><span></span><a href="/easyquery.htm?cn=B01">简单查询</a> </li><li class="advancedSearch"><span></span><a href="/adv.htm?cn=B01" class="advS">高级查询</a> </li><li class="dataMap off"><span></span><a class="map">数据地图</a> </li><li class="viewChart"><span></span><a href="/ks.htm?cn=B01" class="viewChartA">经济图表</a> </li>
+</ul>
+            
+            <div class="mattblackmenu right" id="rightmenu">
+				<ul>
+					<li><a href="javascript:loginOper(saveFavorite);" id="sevaBtn"><img class="vm" src="/images/icon-2.png" width="18" height="18" /><span>添加收藏</span></a></li>
+					<li><a href="javascript:void(0);" rel="menuE02"><img class="vm" src="/images/icon-3.png" width="18" height="18" /><span>数据管理</span><img src="js/nav/images/arrow-down.gif" class="downarrowpointer" style="width: 9px; height: 6px;" /></a></li>
+					<li><a href="javascript:void(0);" rel="menuG02"><img class="vm" src="/images/icon-4.png" width="18" height="18" /><span>报表管理</span><img src="js/nav/images/arrow-down.gif" class="downarrowpointer" style="width: 9px; height: 6px;" /></a></li>
+				</ul>
+			</div>
+			<!--menustyle end-->
+			
+			<!--menustyle end-->
+			
+        </div>
+        <!-- subnav 结束 -->
+    </div>
+    <!--navbar 结束-->
+
+    <!-- main_content 开始-->
+    <div id="m-wrap" class="mt10">
+        <div id="main-container" style="position: relative;">
+            <!-- main-left 开始"-->
+            <div class="main-left left split-containe" style="height: 430px;">
+              <div class="ztree-container">
+                  <ul id="treeZhiBiao" class="ztree"><li id="treeZhiBiao_1" class="level0" tabindex="0" hidefocus="true" treenode=""><span id="treeZhiBiao_1_switch" title="" class="button level0 switch noline_open" treenode_switch=""></span><a id="treeZhiBiao_1_a" class="level0" treenode_a="" onclick="" target="_blank" style="" title="指标"><span id="treeZhiBiao_1_ico" title="" treenode_ico="" class="button ico_open" style=""></span><span id="treeZhiBiao_1_span">指标</span></a><ul id="treeZhiBiao_1_ul" class="level0 " style=""><li id="treeZhiBiao_2" class="level1" tabindex="0" hidefocus="true" treenode=""><span id="treeZhiBiao_2_switch" title="" class="button level1 switch noline_open" treenode_switch=""></span><a id="treeZhiBiao_2_a" class="level1" treenode_a="" onclick="" target="_blank" style="" title="国民经济核算"><span id="treeZhiBiao_2_ico" title="" treenode_ico="" class="button ico_open" style=""></span><span id="treeZhiBiao_2_span">国民经济核算</span></a><ul id="treeZhiBiao_2_ul" class="level1 " style=""><li id="treeZhiBiao_8" class="level2" tabindex="0" hidefocus="true" treenode=""><span id="treeZhiBiao_8_switch" title="" class="button level2 switch noline_docu" treenode_switch=""></span><a id="treeZhiBiao_8_a" class="level2" treenode_a="" onclick="" target="_blank" style="" title="国内生产总值(现价)"><span id="treeZhiBiao_8_ico" title="" treenode_ico="" class="button ico_docu" style=""></span><span id="treeZhiBiao_8_span">国内生产总值(现价)</span></a></li><li id="treeZhiBiao_9" class="level2" tabindex="0" hidefocus="true" treenode=""><span id="treeZhiBiao_9_switch" title="" class="button level2 switch noline_docu" treenode_switch=""></span><a id="treeZhiBiao_9_a" class="level2" treenode_a="" onclick="" target="_blank" style="" title="国内生产总值(不变价)"><span id="treeZhiBiao_9_ico" title="" treenode_ico="" class="button ico_docu" style=""></span><span id="treeZhiBiao_9_span">国内生产总值(不变价)</span></a></li><li id="treeZhiBiao_10" class="level2" tabindex="0" hidefocus="true" treenode=""><span id="treeZhiBiao_10_switch" title="" class="button level2 switch noline_docu" treenode_switch=""></span><a id="treeZhiBiao_10_a" class="level2" treenode_a="" onclick="" target="_blank" style="" title="国内生产总值指数"><span id="treeZhiBiao_10_ico" title="" treenode_ico="" class="button ico_docu" style=""></span><span id="treeZhiBiao_10_span">国内生产总值指数</span></a></li><li id="treeZhiBiao_11" class="level2" tabindex="0" hidefocus="true" treenode=""><span id="treeZhiBiao_11_switch" title="" class="button level2 switch noline_docu" treenode_switch=""></span><a id="treeZhiBiao_11_a" class="level2" treenode_a="" onclick="" target="_blank" style="" title="国内生产总值环比增长速度"><span id="treeZhiBiao_11_ico" title="" treenode_ico="" class="button ico_docu" style=""></span><span id="treeZhiBiao_11_span">国内生产总值环比增长速度</span></a></li><li id="treeZhiBiao_12" class="level2" tabindex="0" hidefocus="true" treenode=""><span id="treeZhiBiao_12_switch" title="" class="button level2 switch noline_docu" treenode_switch=""></span><a id="treeZhiBiao_12_a" class="level2" treenode_a="" onclick="" target="_blank" style="" title="三大需求对国内生产总值增长的贡献率"><span id="treeZhiBiao_12_ico" title="" treenode_ico="" class="button ico_docu" style=""></span><span id="treeZhiBiao_12_span">三大需求对国内生产总值增长的贡献率</span></a></li></ul></li><li id="treeZhiBiao_3" class="level1" tabindex="0" hidefocus="true" treenode=""><span id="treeZhiBiao_3_switch" title="" class="button level1 switch noline_open" treenode_switch=""></span><a id="treeZhiBiao_3_a" class="level1" treenode_a="" onclick="" target="_blank" style="" title="农业"><span id="treeZhiBiao_3_ico" title="" treenode_ico="" class="button ico_open" style=""></span><span id="treeZhiBiao_3_span">农业</span></a><ul id="treeZhiBiao_3_ul" class="level1 " style=""><li id="treeZhiBiao_13" class="level2" tabindex="0" hidefocus="true" treenode=""><span id="treeZhiBiao_13_switch" title="" class="button level2 switch noline_docu" treenode_switch=""></span><a id="treeZhiBiao_13_a" class="level2" treenode_a="" onclick="" target="_blank" style="" title="农林牧渔业总产值"><span id="treeZhiBiao_13_ico" title="" treenode_ico="" class="button ico_docu" style=""></span><span id="treeZhiBiao_13_span">农林牧渔业总产值</span></a></li></ul></li><li id="treeZhiBiao_4" class="level1" tabindex="0" hidefocus="true" treenode=""><span id="treeZhiBiao_4_switch" title="" class="button level1 switch noline_open" treenode_switch=""></span><a id="treeZhiBiao_4_a" class="level1" treenode_a="" onclick="" target="_blank" style="" title="工业"><span id="treeZhiBiao_4_ico" title="" treenode_ico="" class="button ico_open" style=""></span><span id="treeZhiBiao_4_span">工业</span></a><ul id="treeZhiBiao_4_ul" class="level1 " style=""><li id="treeZhiBiao_14" class="level2" tabindex="0" hidefocus="true" treenode=""><span id="treeZhiBiao_14_switch" title="" class="button level2 switch noline_open" treenode_switch=""></span><a id="treeZhiBiao_14_a" class="level2" treenode_a="" onclick="" target="_blank" style="" title="主要工业产品的销售与库存"><span id="treeZhiBiao_14_ico" title="" treenode_ico="" class="button ico_open" style=""></span><span id="treeZhiBiao_14_span">主要工业产品的销售与库存</span></a><ul id="treeZhiBiao_14_ul" class="level2 " style=""><li id="treeZhiBiao_44" class="level3" tabindex="0" hidefocus="true" treenode=""><span id="treeZhiBiao_44_switch" title="" class="button level3 switch noline_docu" treenode_switch=""></span><a id="treeZhiBiao_44_a" class="level3" treenode_a="" onclick="" target="_blank" style="" title="铁矿石原矿"><span id="treeZhiBiao_44_ico" title="" treenode_ico="" class="button ico_docu" style=""></span><span id="treeZhiBiao_44_span">铁矿石原矿</span></a></li><li id="treeZhiBiao_45" class="level3" tabindex="0" hidefocus="true" treenode=""><span id="treeZhiBiao_45_switch" title="" class="button level3 switch noline_docu" treenode_switch=""></span><a id="treeZhiBiao_45_a" class="level3" treenode_a="" onclick="" target="_blank" style="" title="原盐"><span id="treeZhiBiao_45_ico" title="" treenode_ico="" class="button ico_docu" style=""></span><span id="treeZhiBiao_45_span">原盐</span></a></li><li id="treeZhiBiao_46" class="level3" tabindex="0" hidefocus="true" treenode=""><span id="treeZhiBiao_46_switch" title="" class="button level3 switch noline_docu" treenode_switch=""></span><a id="treeZhiBiao_46_a" class="level3" treenode_a="" onclick="" target="_blank" style="" title="成品糖"><span id="treeZhiBiao_46_ico" title="" treenode_ico="" class="button ico_docu" style=""></span><span id="treeZhiBiao_46_span">成品糖</span></a></li><li id="treeZhiBiao_47" class="level3" tabindex="0" hidefocus="true" treenode=""><span id="treeZhiBiao_47_switch" title="" class="button level3 switch noline_docu" treenode_switch=""></span><a id="treeZhiBiao_47_a" class="level3" treenode_a="" onclick="" target="_blank" style="" title="精制食用植物油"><span id="treeZhiBiao_47_ico" title="" treenode_ico="" class="button ico_docu" style=""></span><span id="treeZhiBiao_47_span">精制食用植物油</span></a></li><li id="treeZhiBiao_48" class="level3" tabindex="0" hidefocus="true" treenode=""><span id="treeZhiBiao_48_switch" title="" class="button level3 switch noline_docu" treenode_switch=""></span><a id="treeZhiBiao_48_a" class="level3" treenode_a="" onclick="" target="_blank" style="" title="乳制品"><span id="treeZhiBiao_48_ico" title="" treenode_ico="" class="button ico_docu" style=""></span><span id="treeZhiBiao_48_span">乳制品</span></a></li><li id="treeZhiBiao_49" class="level3" tabindex="0" hidefocus="true" treenode=""><span id="treeZhiBiao_49_switch" title="" class="button level3 switch noline_docu" treenode_switch=""></span><a id="treeZhiBiao_49_a" class="level3" treenode_a="" onclick="" target="_blank" style="" title="白酒(折65度，商品量)"><span id="treeZhiBiao_49_ico" title="" treenode_ico="" class="button ico_docu" style=""></span><span id="treeZhiBiao_49_span">白酒(折65度，商品量)</span></a></li><li id="treeZhiBiao_50" class="level3" tabindex="0" hidefocus="true" treenode=""><span id="treeZhiBiao_50_switch" title="" class="button level3 switch noline_docu" treenode_switch=""></span><a id="treeZhiBiao_50_a" class="level3" treenode_a="" onclick="" target="_blank" style="" title="啤酒"><span id="treeZhiBiao_50_ico" title="" treenode_ico="" class="button ico_docu" style=""></span><span id="treeZhiBiao_50_span">啤酒</span></a></li><li id="treeZhiBiao_51" class="level3" tabindex="0" hidefocus="true" treenode=""><span id="treeZhiBiao_51_switch" title="" class="button level3 switch noline_docu" treenode_switch=""></span><a id="treeZhiBiao_51_a" class="level3" treenode_a="" onclick="" target="_blank" style="" title="饮料"><span id="treeZhiBiao_51_ico" title="" treenode_ico="" class="button ico_docu" style=""></span><span id="treeZhiBiao_51_span">饮料</span></a></li><li id="treeZhiBiao_52" class="level3" tabindex="0" hidefocus="true" treenode=""><span id="treeZhiBiao_52_switch" title="" class="button level3 switch noline_docu" treenode_switch=""></span><a id="treeZhiBiao_52_a" class="level3" treenode_a="" onclick="" target="_blank" style="" title="卷烟"><span id="treeZhiBiao_52_ico" title="" treenode_ico="" class="button ico_docu" style=""></span><span id="treeZhiBiao_52_span">卷烟</span></a></li><li id="treeZhiBiao_53" class="level3" tabindex="0" hidefocus="true" treenode=""><span id="treeZhiBiao_53_switch" title="" class="button level3 switch noline_docu" treenode_switch=""></span><a id="treeZhiBiao_53_a" class="level3" treenode_a="" onclick="" target="_blank" style="" title="纱"><span id="treeZhiBiao_53_ico" title="" treenode_ico="" class="button ico_docu" style=""></span><span id="treeZhiBiao_53_span">纱</span></a></li><li id="treeZhiBiao_54" class="level3" tabindex="0" hidefocus="true" treenode=""><span id="treeZhiBiao_54_switch" title="" class="button level3 switch noline_docu" treenode_switch=""></span><a id="treeZhiBiao_54_a" class="level3" treenode_a="" onclick="" target="_blank" style="" title="布"><span id="treeZhiBiao_54_ico" title="" treenode_ico="" class="button ico_docu" style=""></span><span id="treeZhiBiao_54_span">布</span></a></li><li id="treeZhiBiao_55" class="level3" tabindex="0" hidefocus="true" treenode=""><span id="treeZhiBiao_55_switch" title="" class="button level3 switch noline_docu" treenode_switch=""></span><a id="treeZhiBiao_55_a" class="level3" treenode_a="" onclick="" target="_blank" style="" title="服装"><span id="treeZhiBiao_55_ico" title="" treenode_ico="" class="button ico_docu" style=""></span><span id="treeZhiBiao_55_span">服装</span></a></li><li id="treeZhiBiao_56" class="level3" tabindex="0" hidefocus="true" treenode=""><span id="treeZhiBiao_56_switch" title="" class="button level3 switch noline_docu" treenode_switch=""></span><a id="treeZhiBiao_56_a" class="level3" treenode_a="" onclick="" target="_blank" style="" title="棉布"><span id="treeZhiBiao_56_ico" title="" treenode_ico="" class="button ico_docu" style=""></span><span id="treeZhiBiao_56_span">棉布</span></a></li><li id="treeZhiBiao_57" class="level3" tabindex="0" hidefocus="true" treenode=""><span id="treeZhiBiao_57_switch" title="" class="button level3 switch noline_docu" treenode_switch=""></span><a id="treeZhiBiao_57_a" class="level3" treenode_a="" onclick="" target="_blank" style="" title="棉混纺布(混纺交织布)"><span id="treeZhiBiao_57_ico" title="" treenode_ico="" class="button ico_docu" style=""></span><span id="treeZhiBiao_57_span">棉混纺布(混纺交织布)</span></a></li><li id="treeZhiBiao_58" class="level3" tabindex="0" hidefocus="true" treenode=""><span id="treeZhiBiao_58_switch" title="" class="button level3 switch noline_docu" treenode_switch=""></span><a id="treeZhiBiao_58_a" class="level3" treenode_a="" onclick="" target="_blank" style="" title="化学纤维布(纯化纤布)"><span id="treeZhiBiao_58_ico" title="" treenode_ico="" class="button ico_docu" style=""></span><span id="treeZhiBiao_58_span">化学纤维布(纯化纤布)</span></a></li><li id="treeZhiBiao_59" class="level3" tabindex="0" hidefocus="true" treenode=""><span id="treeZhiBiao_59_switch" title="" class="button level3 switch noline_docu" treenode_switch=""></span><a id="treeZhiBiao_59_a" class="level3" treenode_a="" onclick="" target="_blank" style="" title="毛机织物(呢绒)"><span id="treeZhiBiao_59_ico" title="" treenode_ico="" class="button ico_docu" style=""></span><span id="treeZhiBiao_59_span">毛机织物(呢绒)</span></a></li><li id="treeZhiBiao_60" class="level3" tabindex="0" hidefocus="true" treenode=""><span id="treeZhiBiao_60_switch" title="" class="button level3 switch noline_docu" treenode_switch=""></span><a id="treeZhiBiao_60_a" class="level3" treenode_a="" onclick="" target="_blank" style="" title="机制纸及纸板"><span id="treeZhiBiao_60_ico" title="" treenode_ico="" class="button ico_docu" style=""></span><span id="treeZhiBiao_60_span">机制纸及纸板</span></a></li><li id="treeZhiBiao_61" class="level3" tabindex="0" hidefocus="true" treenode=""><span id="treeZhiBiao_61_switch" title="" class="button level3 switch noline_docu" treenode_switch=""></span><a id="treeZhiBiao_61_a" class="level3" treenode_a="" onclick="" target="_blank" style="" title="硫酸(折100%)"><span id="treeZhiBiao_61_ico" title="" treenode_ico="" class="button ico_docu" style=""></span><span id="treeZhiBiao_61_span">硫酸(折100%)</span></a></li><li id="treeZhiBiao_62" class="level3" tabindex="0" hidefocus="true" treenode=""><span id="treeZhiBiao_62_switch" title="" class="button level3 switch noline_docu" treenode_switch=""></span><a id="treeZhiBiao_62_a" class="level3" treenode_a="" onclick="" target="_blank" style="" title="烧碱(折100%)"><span id="treeZhiBiao_62_ico" title="" treenode_ico="" class="button ico_docu" style=""></span><span id="treeZhiBiao_62_span">烧碱(折100%)</span></a></li><li id="treeZhiBiao_63" class="level3" tabindex="0" hidefocus="true" treenode=""><span id="treeZhiBiao_63_switch" title="" class="button level3 switch noline_docu" treenode_switch=""></span><a id="treeZhiBiao_63_a" class="level3" treenode_a="" onclick="" target="_blank" style="" title="纯碱(碳酸钠)"><span id="treeZhiBiao_63_ico" title="" treenode_ico="" class="button ico_docu" style=""></span><span id="treeZhiBiao_63_span">纯碱(碳酸钠)</span></a></li><li id="treeZhiBiao_64" class="level3" tabindex="0" hidefocus="true" treenode=""><span id="treeZhiBiao_64_switch" title="" class="button level3 switch noline_docu" treenode_switch=""></span><a id="treeZhiBiao_64_a" class="level3" treenode_a="" onclick="" target="_blank" style="" title="碳化钙(电石，折300升/千克)"><span id="treeZhiBiao_64_ico" title="" treenode_ico="" class="button ico_docu" style=""></span><span id="treeZhiBiao_64_span">碳化钙(电石，折300升/千克)</span></a></li><li id="treeZhiBiao_65" class="level3" tabindex="0" hidefocus="true" treenode=""><span id="treeZhiBiao_65_switch" title="" class="button level3 switch noline_docu" treenode_switch=""></span><a id="treeZhiBiao_65_a" class="level3" treenode_a="" onclick="" target="_blank" style="" title="乙烯"><span id="treeZhiBiao_65_ico" title="" treenode_ico="" class="button ico_docu" style=""></span><span id="treeZhiBiao_65_span">乙烯</span></a></li><li id="treeZhiBiao_66" class="level3" tabindex="0" hidefocus="true" treenode=""><span id="treeZhiBiao_66_switch" title="" class="button level3 switch noline_docu" treenode_switch=""></span><a id="treeZhiBiao_66_a" class="level3" treenode_a="" onclick="" target="_blank" style="" title="合成氨(无水氨)"><span id="treeZhiBiao_66_ico" title="" treenode_ico="" class="button ico_docu" style=""></span><span id="treeZhiBiao_66_span">合成氨(无水氨)</span></a></li><li id="treeZhiBiao_67" class="level3" tabindex="0" hidefocus="true" treenode=""><span id="treeZhiBiao_67_switch" title="" class="button level3 switch noline_docu" treenode_switch=""></span><a id="treeZhiBiao_67_a" class="level3" treenode_a="" onclick="" target="_blank" style="" title="汽油"><span id="treeZhiBiao_67_ico" title="" treenode_ico="" class="button ico_docu" style=""></span><span id="treeZhiBiao_67_span">汽油</span></a></li><li id="treeZhiBiao_68" class="level3" tabindex="0" hidefocus="true" treenode=""><span id="treeZhiBiao_68_switch" title="" class="button level3 switch noline_docu" treenode_switch=""></span><a id="treeZhiBiao_68_a" class="level3" treenode_a="" onclick="" target="_blank" style="" title="煤油"><span id="treeZhiBiao_68_ico" title="" treenode_ico="" class="button ico_docu" style=""></span><span id="treeZhiBiao_68_span">煤油</span></a></li><li id="treeZhiBiao_69" class="level3" tabindex="0" hidefocus="true" treenode=""><span id="treeZhiBiao_69_switch" title="" class="button level3 switch noline_docu" treenode_switch=""></span><a id="treeZhiBiao_69_a" class="level3" treenode_a="" onclick="" target="_blank" style="" title="柴油"><span id="treeZhiBiao_69_ico" title="" treenode_ico="" class="button ico_docu" style=""></span><span id="treeZhiBiao_69_span">柴油</span></a></li><li id="treeZhiBiao_70" class="level3" tabindex="0" hidefocus="true" treenode=""><span id="treeZhiBiao_70_switch" title="" class="button level3 switch noline_docu" treenode_switch=""></span><a id="treeZhiBiao_70_a" class="level3" treenode_a="" onclick="" target="_blank" style="" title="农用氮磷钾化学肥料总计(折纯)"><span id="treeZhiBiao_70_ico" title="" treenode_ico="" class="button ico_docu" style=""></span><span id="treeZhiBiao_70_span">农用氮磷钾化学肥料总计(折纯)</span></a></li><li id="treeZhiBiao_71" class="level3" tabindex="0" hidefocus="true" treenode=""><span id="treeZhiBiao_71_switch" title="" class="button level3 switch noline_docu" treenode_switch=""></span><a id="treeZhiBiao_71_a" class="level3" treenode_a="" onclick="" target="_blank" style="" title="氮肥(折含氮100%)"><span id="treeZhiBiao_71_ico" title="" treenode_ico="" class="button ico_docu" style=""></span><span id="treeZhiBiao_71_span">氮肥(折含氮100%)</span></a></li><li id="treeZhiBiao_72" class="level3" tabindex="0" hidefocus="true" treenode=""><span id="treeZhiBiao_72_switch" title="" class="button level3 switch noline_docu" treenode_switch=""></span><a id="treeZhiBiao_72_a" class="level3" treenode_a="" onclick="" target="_blank" style="" title="磷肥(折五氧化二磷100%)"><span id="treeZhiBiao_72_ico" title="" treenode_ico="" class="button ico_docu" style=""></span><span id="treeZhiBiao_72_span">磷肥(折五氧化二磷100%)</span></a></li><li id="treeZhiBiao_73" class="level3" tabindex="0" hidefocus="true" treenode=""><span id="treeZhiBiao_73_switch" title="" class="button level3 switch noline_docu" treenode_switch=""></span><a id="treeZhiBiao_73_a" class="level3" treenode_a="" onclick="" target="_blank" style="" title="化学农药原药(折有效成份100%)"><span id="treeZhiBiao_73_ico" title="" treenode_ico="" class="button ico_docu" style=""></span><span id="treeZhiBiao_73_span">化学农药原药(折有效成份100%)</span></a></li><li id="treeZhiBiao_74" class="level3" tabindex="0" hidefocus="true" treenode=""><span id="treeZhiBiao_74_switch" title="" class="button level3 switch noline_docu" treenode_switch=""></span><a id="treeZhiBiao_74_a" class="level3" treenode_a="" onclick="" target="_blank" style="" title="涂料"><span id="treeZhiBiao_74_ico" title="" treenode_ico="" class="button ico_docu" style=""></span><span id="treeZhiBiao_74_span">涂料</span></a></li><li id="treeZhiBiao_75" class="level3" tabindex="0" hidefocus="true" treenode=""><span id="treeZhiBiao_75_switch" title="" class="button level3 switch noline_docu" treenode_switch=""></span><a id="treeZhiBiao_75_a" class="level3" treenode_a="" onclick="" target="_blank" style="" title="初级形态塑料"><span id="treeZhiBiao_75_ico" title="" treenode_ico="" class="button ico_docu" style=""></span><span id="treeZhiBiao_75_span">初级形态塑料</span></a></li><li id="treeZhiBiao_76" class="level3" tabindex="0" hidefocus="true" treenode=""><span id="treeZhiBiao_76_switch" title="" class="button level3 switch noline_docu" treenode_switch=""></span><a id="treeZhiBiao_76_a" class="level3" treenode_a="" onclick="" target="_blank" style="" title="合成橡胶"><span id="treeZhiBiao_76_ico" title="" treenode_ico="" class="button ico_docu" style=""></span><span id="treeZhiBiao_76_span">合成橡胶</span></a></li><li id="treeZhiBiao_77" class="level3" tabindex="0" hidefocus="true" treenode=""><span id="treeZhiBiao_77_switch" title="" class="button level3 switch noline_docu" treenode_switch=""></span><a id="treeZhiBiao_77_a" class="level3" treenode_a="" onclick="" target="_blank" style="" title="合成洗涤剂"><span id="treeZhiBiao_77_ico" title="" treenode_ico="" class="button ico_docu" style=""></span><span id="treeZhiBiao_77_span">合成洗涤剂</span></a></li><li id="treeZhiBiao_78" class="level3" tabindex="0" hidefocus="true" treenode=""><span id="treeZhiBiao_78_switch" title="" class="button level3 switch noline_docu" treenode_switch=""></span><a id="treeZhiBiao_78_a" class="level3" treenode_a="" onclick="" target="_blank" style="" title="化学药品原药"><span id="treeZhiBiao_78_ico" title="" treenode_ico="" class="button ico_docu" style=""></span><span id="treeZhiBiao_78_span">化学药品原药</span></a></li><li id="treeZhiBiao_79" class="level3" tabindex="0" hidefocus="true" treenode=""><span id="treeZhiBiao_79_switch" title="" class="button level3 switch noline_docu" treenode_switch=""></span><a id="treeZhiBiao_79_a" class="level3" treenode_a="" onclick="" target="_blank" style="" title="化学纤维"><span id="treeZhiBiao_79_ico" title="" treenode_ico="" class="button ico_docu" style=""></span><span id="treeZhiBiao_79_span">化学纤维</span></a></li><li id="treeZhiBiao_80" class="level3" tabindex="0" hidefocus="true" treenode=""><span id="treeZhiBiao_80_switch" title="" class="button level3 switch noline_docu" treenode_switch=""></span><a id="treeZhiBiao_80_a" class="level3" treenode_a="" onclick="" target="_blank" style="" title="橡胶轮胎外胎"><span id="treeZhiBiao_80_ico" title="" treenode_ico="" class="button ico_docu" style=""></span><span id="treeZhiBiao_80_span">橡胶轮胎外胎</span></a></li><li id="treeZhiBiao_81" class="level3" tabindex="0" hidefocus="true" treenode=""><span id="treeZhiBiao_81_switch" title="" class="button level3 switch noline_docu" treenode_switch=""></span><a id="treeZhiBiao_81_a" class="level3" treenode_a="" onclick="" target="_blank" style="" title="塑料制品"><span id="treeZhiBiao_81_ico" title="" treenode_ico="" class="button ico_docu" style=""></span><span id="treeZhiBiao_81_span">塑料制品</span></a></li><li id="treeZhiBiao_82" class="level3" tabindex="0" hidefocus="true" treenode=""><span id="treeZhiBiao_82_switch" title="" class="button level3 switch noline_docu" treenode_switch=""></span><a id="treeZhiBiao_82_a" class="level3" treenode_a="" onclick="" target="_blank" style="" title="农用薄膜"><span id="treeZhiBiao_82_ico" title="" treenode_ico="" class="button ico_docu" style=""></span><span id="treeZhiBiao_82_span">农用薄膜</span></a></li><li id="treeZhiBiao_83" class="level3" tabindex="0" hidefocus="true" treenode=""><span id="treeZhiBiao_83_switch" title="" class="button level3 switch noline_docu" treenode_switch=""></span><a id="treeZhiBiao_83_a" class="level3" treenode_a="" onclick="" target="_blank" style="" title="水泥"><span id="treeZhiBiao_83_ico" title="" treenode_ico="" class="button ico_docu" style=""></span><span id="treeZhiBiao_83_span">水泥</span></a></li><li id="treeZhiBiao_84" class="level3" tabindex="0" hidefocus="true" treenode=""><span id="treeZhiBiao_84_switch" title="" class="button level3 switch noline_docu" treenode_switch=""></span><a id="treeZhiBiao_84_a" class="level3" treenode_a="" onclick="" target="_blank" style="" title="平板玻璃"><span id="treeZhiBiao_84_ico" title="" treenode_ico="" class="button ico_docu" style=""></span><span id="treeZhiBiao_84_span">平板玻璃</span></a></li><li id="treeZhiBiao_85" class="level3" tabindex="0" hidefocus="true" treenode=""><span id="treeZhiBiao_85_switch" title="" class="button level3 switch noline_docu" treenode_switch=""></span><a id="treeZhiBiao_85_a" class="level3" treenode_a="" onclick="" target="_blank" style="" title="生铁"><span id="treeZhiBiao_85_ico" title="" treenode_ico="" class="button ico_docu" style=""></span><span id="treeZhiBiao_85_span">生铁</span></a></li><li id="treeZhiBiao_86" class="level3" tabindex="0" hidefocus="true" treenode=""><span id="treeZhiBiao_86_switch" title="" class="button level3 switch noline_docu" treenode_switch=""></span><a id="treeZhiBiao_86_a" class="level3" treenode_a="" onclick="" target="_blank" style="" title="粗钢"><span id="treeZhiBiao_86_ico" title="" treenode_ico="" class="button ico_docu" style=""></span><span id="treeZhiBiao_86_span">粗钢</span></a></li><li id="treeZhiBiao_87" class="level3" tabindex="0" hidefocus="true" treenode=""><span id="treeZhiBiao_87_switch" title="" class="button level3 switch noline_docu" treenode_switch=""></span><a id="treeZhiBiao_87_a" class="level3" treenode_a="" onclick="" target="_blank" style="" title="钢材"><span id="treeZhiBiao_87_ico" title="" treenode_ico="" class="button ico_docu" style=""></span><span id="treeZhiBiao_87_span">钢材</span></a></li><li id="treeZhiBiao_88" class="level3" tabindex="0" hidefocus="true" treenode=""><span id="treeZhiBiao_88_switch" title="" class="button level3 switch noline_docu" treenode_switch=""></span><a id="treeZhiBiao_88_a" class="level3" treenode_a="" onclick="" target="_blank" style="" title="盘条(线材)"><span id="treeZhiBiao_88_ico" title="" treenode_ico="" class="button ico_docu" style=""></span><span id="treeZhiBiao_88_span">盘条(线材)</span></a></li><li id="treeZhiBiao_89" class="level3" tabindex="0" hidefocus="true" treenode=""><span id="treeZhiBiao_89_switch" title="" class="button level3 switch noline_docu" treenode_switch=""></span><a id="treeZhiBiao_89_a" class="level3" treenode_a="" onclick="" target="_blank" style="" title="十种有色金属"><span id="treeZhiBiao_89_ico" title="" treenode_ico="" class="button ico_docu" style=""></span><span id="treeZhiBiao_89_span">十种有色金属</span></a></li><li id="treeZhiBiao_90" class="level3" tabindex="0" hidefocus="true" treenode=""><span id="treeZhiBiao_90_switch" title="" class="button level3 switch noline_docu" treenode_switch=""></span><a id="treeZhiBiao_90_a" class="level3" treenode_a="" onclick="" target="_blank" style="" title="氧化铝"><span id="treeZhiBiao_90_ico" title="" treenode_ico="" class="button ico_docu" style=""></span><span id="treeZhiBiao_90_span">氧化铝</span></a></li><li id="treeZhiBiao_91" class="level3" tabindex="0" hidefocus="true" treenode=""><span id="treeZhiBiao_91_switch" title="" class="button level3 switch noline_docu" treenode_switch=""></span><a id="treeZhiBiao_91_a" class="level3" treenode_a="" onclick="" target="_blank" style="" title="原铝(电解铝)"><span id="treeZhiBiao_91_ico" title="" treenode_ico="" class="button ico_docu" style=""></span><span id="treeZhiBiao_91_span">原铝(电解铝)</span></a></li><li id="treeZhiBiao_92" class="level3" tabindex="0" hidefocus="true" treenode=""><span id="treeZhiBiao_92_switch" title="" class="button level3 switch noline_docu" treenode_switch=""></span><a id="treeZhiBiao_92_a" class="level3" treenode_a="" onclick="" target="_blank" style="" title="金属切削机床"><span id="treeZhiBiao_92_ico" title="" treenode_ico="" class="button ico_docu" style=""></span><span id="treeZhiBiao_92_span">金属切削机床</span></a></li><li id="treeZhiBiao_93" class="level3" tabindex="0" hidefocus="true" treenode=""><span id="treeZhiBiao_93_switch" title="" class="button level3 switch noline_docu" treenode_switch=""></span><a id="treeZhiBiao_93_a" class="level3" treenode_a="" onclick="" target="_blank" style="" title="挖掘机"><span id="treeZhiBiao_93_ico" title="" treenode_ico="" class="button ico_docu" style=""></span><span id="treeZhiBiao_93_span">挖掘机</span></a></li><li id="treeZhiBiao_94" class="level3" tabindex="0" hidefocus="true" treenode=""><span id="treeZhiBiao_94_switch" title="" class="button level3 switch noline_docu" treenode_switch=""></span><a id="treeZhiBiao_94_a" class="level3" treenode_a="" onclick="" target="_blank" style="" title="大型拖拉机"><span id="treeZhiBiao_94_ico" title="" treenode_ico="" class="button ico_docu" style=""></span><span id="treeZhiBiao_94_span">大型拖拉机</span></a></li><li id="treeZhiBiao_95" class="level3" tabindex="0" hidefocus="true" treenode=""><span id="treeZhiBiao_95_switch" title="" class="button level3 switch noline_docu" treenode_switch=""></span><a id="treeZhiBiao_95_a" class="level3" treenode_a="" onclick="" target="_blank" style="" title="中型拖拉机"><span id="treeZhiBiao_95_ico" title="" treenode_ico="" class="button ico_docu" style=""></span><span id="treeZhiBiao_95_span">中型拖拉机</span></a></li><li id="treeZhiBiao_96" class="level3" tabindex="0" hidefocus="true" treenode=""><span id="treeZhiBiao_96_switch" title="" class="button level3 switch noline_docu" treenode_switch=""></span><a id="treeZhiBiao_96_a" class="level3" treenode_a="" onclick="" target="_blank" style="" title="小型拖拉机"><span id="treeZhiBiao_96_ico" title="" treenode_ico="" class="button ico_docu" style=""></span><span id="treeZhiBiao_96_span">小型拖拉机</span></a></li><li id="treeZhiBiao_97" class="level3" tabindex="0" hidefocus="true" treenode=""><span id="treeZhiBiao_97_switch" title="" class="button level3 switch noline_docu" treenode_switch=""></span><a id="treeZhiBiao_97_a" class="level3" treenode_a="" onclick="" target="_blank" style="" title="汽车"><span id="treeZhiBiao_97_ico" title="" treenode_ico="" class="button ico_docu" style=""></span><span id="treeZhiBiao_97_span">汽车</span></a></li><li id="treeZhiBiao_98" class="level3" tabindex="0" hidefocus="true" treenode=""><span id="treeZhiBiao_98_switch" title="" class="button level3 switch noline_docu" treenode_switch=""></span><a id="treeZhiBiao_98_a" class="level3" treenode_a="" onclick="" target="_blank" style="" title="轿车"><span id="treeZhiBiao_98_ico" title="" treenode_ico="" class="button ico_docu" style=""></span><span id="treeZhiBiao_98_span">轿车</span></a></li><li id="treeZhiBiao_99" class="level3" tabindex="0" hidefocus="true" treenode=""><span id="treeZhiBiao_99_switch" title="" class="button level3 switch noline_docu" treenode_switch=""></span><a id="treeZhiBiao_99_a" class="level3" treenode_a="" onclick="" target="_blank" style="" title="运动型多用途用车(SUV)"><span id="treeZhiBiao_99_ico" title="" treenode_ico="" class="button ico_docu" style=""></span><span id="treeZhiBiao_99_span">运动型多用途用车(SUV)</span></a></li><li id="treeZhiBiao_100" class="level3" tabindex="0" hidefocus="true" treenode=""><span id="treeZhiBiao_100_switch" title="" class="button level3 switch noline_docu" treenode_switch=""></span><a id="treeZhiBiao_100_a" class="level3" treenode_a="" onclick="" target="_blank" style="" title="载货汽车"><span id="treeZhiBiao_100_ico" title="" treenode_ico="" class="button ico_docu" style=""></span><span id="treeZhiBiao_100_span">载货汽车</span></a></li><li id="treeZhiBiao_101" class="level3" tabindex="0" hidefocus="true" treenode=""><span id="treeZhiBiao_101_switch" title="" class="button level3 switch noline_docu" treenode_switch=""></span><a id="treeZhiBiao_101_a" class="level3" treenode_a="" onclick="" target="_blank" style="" title="新能源汽车"><span id="treeZhiBiao_101_ico" title="" treenode_ico="" class="button ico_docu" style=""></span><span id="treeZhiBiao_101_span">新能源汽车</span></a></li><li id="treeZhiBiao_102" class="level3" tabindex="0" hidefocus="true" treenode=""><span id="treeZhiBiao_102_switch" title="" class="button level3 switch noline_docu" treenode_switch=""></span><a id="treeZhiBiao_102_a" class="level3" treenode_a="" onclick="" target="_blank" style="" title="摩托车"><span id="treeZhiBiao_102_ico" title="" treenode_ico="" class="button ico_docu" style=""></span><span id="treeZhiBiao_102_span">摩托车</span></a></li><li id="treeZhiBiao_103" class="level3" tabindex="0" hidefocus="true" treenode=""><span id="treeZhiBiao_103_switch" title="" class="button level3 switch noline_docu" treenode_switch=""></span><a id="treeZhiBiao_103_a" class="level3" treenode_a="" onclick="" target="_blank" style="" title="两轮脚踏自行车(自行车)"><span id="treeZhiBiao_103_ico" title="" treenode_ico="" class="button ico_docu" style=""></span><span id="treeZhiBiao_103_span">两轮脚踏自行车(自行车)</span></a></li><li id="treeZhiBiao_104" class="level3" tabindex="0" hidefocus="true" treenode=""><span id="treeZhiBiao_104_switch" title="" class="button level3 switch noline_docu" treenode_switch=""></span><a id="treeZhiBiao_104_a" class="level3" treenode_a="" onclick="" target="_blank" style="" title="民用钢质船舶"><span id="treeZhiBiao_104_ico" title="" treenode_ico="" class="button ico_docu" style=""></span><span id="treeZhiBiao_104_span">民用钢质船舶</span></a></li><li id="treeZhiBiao_105" class="level3" tabindex="0" hidefocus="true" treenode=""><span id="treeZhiBiao_105_switch" title="" class="button level3 switch noline_docu" treenode_switch=""></span><a id="treeZhiBiao_105_a" class="level3" treenode_a="" onclick="" target="_blank" style="" title="发电机组(发电设备)"><span id="treeZhiBiao_105_ico" title="" treenode_ico="" class="button ico_docu" style=""></span><span id="treeZhiBiao_105_span">发电机组(发电设备)</span></a></li><li id="treeZhiBiao_106" class="level3" tabindex="0" hidefocus="true" treenode=""><span id="treeZhiBiao_106_switch" title="" class="button level3 switch noline_docu" treenode_switch=""></span><a id="treeZhiBiao_106_a" class="level3" treenode_a="" onclick="" target="_blank" style="" title="家用洗衣机"><span id="treeZhiBiao_106_ico" title="" treenode_ico="" class="button ico_docu" style=""></span><span id="treeZhiBiao_106_span">家用洗衣机</span></a></li><li id="treeZhiBiao_107" class="level3" tabindex="0" hidefocus="true" treenode=""><span id="treeZhiBiao_107_switch" title="" class="button level3 switch noline_docu" treenode_switch=""></span><a id="treeZhiBiao_107_a" class="level3" treenode_a="" onclick="" target="_blank" style="" title="家用吸尘器"><span id="treeZhiBiao_107_ico" title="" treenode_ico="" class="button ico_docu" style=""></span><span id="treeZhiBiao_107_span">家用吸尘器</span></a></li><li id="treeZhiBiao_108" class="level3" tabindex="0" hidefocus="true" treenode=""><span id="treeZhiBiao_108_switch" title="" class="button level3 switch noline_docu" treenode_switch=""></span><a id="treeZhiBiao_108_a" class="level3" treenode_a="" onclick="" target="_blank" style="" title="家用电冰箱"><span id="treeZhiBiao_108_ico" title="" treenode_ico="" class="button ico_docu" style=""></span><span id="treeZhiBiao_108_span">家用电冰箱</span></a></li><li id="treeZhiBiao_109" class="level3" tabindex="0" hidefocus="true" treenode=""><span id="treeZhiBiao_109_switch" title="" class="button level3 switch noline_docu" treenode_switch=""></span><a id="treeZhiBiao_109_a" class="level3" treenode_a="" onclick="" target="_blank" style="" title="家用冷柜"><span id="treeZhiBiao_109_ico" title="" treenode_ico="" class="button ico_docu" style=""></span><span id="treeZhiBiao_109_span">家用冷柜</span></a></li><li id="treeZhiBiao_110" class="level3" tabindex="0" hidefocus="true" treenode=""><span id="treeZhiBiao_110_switch" title="" class="button level3 switch noline_docu" treenode_switch=""></span><a id="treeZhiBiao_110_a" class="level3" treenode_a="" onclick="" target="_blank" style="" title="家用电风扇"><span id="treeZhiBiao_110_ico" title="" treenode_ico="" class="button ico_docu" style=""></span><span id="treeZhiBiao_110_span">家用电风扇</span></a></li><li id="treeZhiBiao_111" class="level3" tabindex="0" hidefocus="true" treenode=""><span id="treeZhiBiao_111_switch" title="" class="button level3 switch noline_docu" treenode_switch=""></span><a id="treeZhiBiao_111_a" class="level3" treenode_a="" onclick="" target="_blank" style="" title="房间空气调节器"><span id="treeZhiBiao_111_ico" title="" treenode_ico="" class="button ico_docu" style=""></span><span id="treeZhiBiao_111_span">房间空气调节器</span></a></li><li id="treeZhiBiao_112" class="level3" tabindex="0" hidefocus="true" treenode=""><span id="treeZhiBiao_112_switch" title="" class="button level3 switch noline_docu" treenode_switch=""></span><a id="treeZhiBiao_112_a" class="level3" treenode_a="" onclick="" target="_blank" style="" title="电子计算机整机"><span id="treeZhiBiao_112_ico" title="" treenode_ico="" class="button ico_docu" style=""></span><span id="treeZhiBiao_112_span">电子计算机整机</span></a></li><li id="treeZhiBiao_113" class="level3" tabindex="0" hidefocus="true" treenode=""><span id="treeZhiBiao_113_switch" title="" class="button level3 switch noline_docu" treenode_switch=""></span><a id="treeZhiBiao_113_a" class="level3" treenode_a="" onclick="" target="_blank" style="" title="移动通信手持机(手机)"><span id="treeZhiBiao_113_ico" title="" treenode_ico="" class="button ico_docu" style=""></span><span id="treeZhiBiao_113_span">移动通信手持机(手机)</span></a></li><li id="treeZhiBiao_114" class="level3" tabindex="0" hidefocus="true" treenode=""><span id="treeZhiBiao_114_switch" title="" class="button level3 switch noline_docu" treenode_switch=""></span><a id="treeZhiBiao_114_a" class="level3" treenode_a="" onclick="" target="_blank" style="" title="吸排油烟机"><span id="treeZhiBiao_114_ico" title="" treenode_ico="" class="button ico_docu" style=""></span><span id="treeZhiBiao_114_span">吸排油烟机</span></a></li><li id="treeZhiBiao_115" class="level3" tabindex="0" hidefocus="true" treenode=""><span id="treeZhiBiao_115_switch" title="" class="button level3 switch noline_docu" treenode_switch=""></span><a id="treeZhiBiao_115_a" class="level3" treenode_a="" onclick="" target="_blank" style="" title="电饭锅"><span id="treeZhiBiao_115_ico" title="" treenode_ico="" class="button ico_docu" style=""></span><span id="treeZhiBiao_115_span">电饭锅</span></a></li><li id="treeZhiBiao_116" class="level3" tabindex="0" hidefocus="true" treenode=""><span id="treeZhiBiao_116_switch" title="" class="button level3 switch noline_docu" treenode_switch=""></span><a id="treeZhiBiao_116_a" class="level3" treenode_a="" onclick="" target="_blank" style="" title="微型计算机设备"><span id="treeZhiBiao_116_ico" title="" treenode_ico="" class="button ico_docu" style=""></span><span id="treeZhiBiao_116_span">微型计算机设备</span></a></li><li id="treeZhiBiao_117" class="level3" tabindex="0" hidefocus="true" treenode=""><span id="treeZhiBiao_117_switch" title="" class="button level3 switch noline_docu" treenode_switch=""></span><a id="treeZhiBiao_117_a" class="level3" treenode_a="" onclick="" target="_blank" style="" title="彩色电视机"><span id="treeZhiBiao_117_ico" title="" treenode_ico="" class="button ico_docu" style=""></span><span id="treeZhiBiao_117_span">彩色电视机</span></a></li><li id="treeZhiBiao_118" class="level3" tabindex="0" hidefocus="true" treenode=""><span id="treeZhiBiao_118_switch" title="" class="button level3 switch noline_docu" treenode_switch=""></span><a id="treeZhiBiao_118_a" class="level3" treenode_a="" onclick="" target="_blank" style="" title="集成电路"><span id="treeZhiBiao_118_ico" title="" treenode_ico="" class="button ico_docu" style=""></span><span id="treeZhiBiao_118_span">集成电路</span></a></li><li id="treeZhiBiao_119" class="level3" tabindex="0" hidefocus="true" treenode=""><span id="treeZhiBiao_119_switch" title="" class="button level3 switch noline_docu" treenode_switch=""></span><a id="treeZhiBiao_119_a" class="level3" treenode_a="" onclick="" target="_blank" style="" title="数字激光音视盘机"><span id="treeZhiBiao_119_ico" title="" treenode_ico="" class="button ico_docu" style=""></span><span id="treeZhiBiao_119_span">数字激光音视盘机</span></a></li><li id="treeZhiBiao_120" class="level3" tabindex="0" hidefocus="true" treenode=""><span id="treeZhiBiao_120_switch" title="" class="button level3 switch noline_docu" treenode_switch=""></span><a id="treeZhiBiao_120_a" class="level3" treenode_a="" onclick="" target="_blank" style="" title="组合音响"><span id="treeZhiBiao_120_ico" title="" treenode_ico="" class="button ico_docu" style=""></span><span id="treeZhiBiao_120_span">组合音响</span></a></li><li id="treeZhiBiao_121" class="level3" tabindex="0" hidefocus="true" treenode=""><span id="treeZhiBiao_121_switch" title="" class="button level3 switch noline_docu" treenode_switch=""></span><a id="treeZhiBiao_121_a" class="level3 curSelectedNode" treenode_a="" onclick="" target="_blank" style="" title="照相机"><span id="treeZhiBiao_121_ico" title="" treenode_ico="" class="button ico_docu" style=""></span><span id="treeZhiBiao_121_span">照相机</span></a></li></ul></li></ul></li><li id="treeZhiBiao_5" class="level1" tabindex="0" hidefocus="true" treenode=""><span id="treeZhiBiao_5_switch" title="" class="button level1 switch noline_open" treenode_switch=""></span><a id="treeZhiBiao_5_a" class="level1" treenode_a="" onclick="" target="_blank" style="" title="建筑业"><span id="treeZhiBiao_5_ico" title="" treenode_ico="" class="button ico_open" style=""></span><span id="treeZhiBiao_5_span">建筑业</span></a><ul id="treeZhiBiao_5_ul" class="level1 " style=""><li id="treeZhiBiao_15" class="level2" tabindex="0" hidefocus="true" treenode=""><span id="treeZhiBiao_15_switch" title="" class="button level2 switch noline_docu" treenode_switch=""></span><a id="treeZhiBiao_15_a" class="level2" treenode_a="" onclick="" target="_blank" style="" title="建筑业总产值"><span id="treeZhiBiao_15_ico" title="" treenode_ico="" class="button ico_docu" style=""></span><span id="treeZhiBiao_15_span">建筑业总产值</span></a></li><li id="treeZhiBiao_16" class="level2" tabindex="0" hidefocus="true" treenode=""><span id="treeZhiBiao_16_switch" title="" class="button level2 switch noline_docu" treenode_switch=""></span><a id="treeZhiBiao_16_a" class="level2" treenode_a="" onclick="" target="_blank" style="" title="建筑业企业签订合同情况"><span id="treeZhiBiao_16_ico" title="" treenode_ico="" class="button ico_docu" style=""></span><span id="treeZhiBiao_16_span">建筑业企业签订合同情况</span></a></li><li id="treeZhiBiao_17" class="level2" tabindex="0" hidefocus="true" treenode=""><span id="treeZhiBiao_17_switch" title="" class="button level2 switch noline_docu" treenode_switch=""></span><a id="treeZhiBiao_17_a" class="level2" treenode_a="" onclick="" target="_blank" style="" title="建筑业企业房屋建筑施工面积"><span id="treeZhiBiao_17_ico" title="" treenode_ico="" class="button ico_docu" style=""></span><span id="treeZhiBiao_17_span">建筑业企业房屋建筑施工面积</span></a></li><li id="treeZhiBiao_18" class="level2" tabindex="0" hidefocus="true" treenode=""><span id="treeZhiBiao_18_switch" title="" class="button level2 switch noline_docu" treenode_switch=""></span><a id="treeZhiBiao_18_a" class="level2" treenode_a="" onclick="" target="_blank" style="" title="建筑业企业个数、从业人数和劳动生产率"><span id="treeZhiBiao_18_ico" title="" treenode_ico="" class="button ico_docu" style=""></span><span id="treeZhiBiao_18_span">建筑业企业个数、从业人数和劳动生产率</span></a></li><li id="treeZhiBiao_19" class="level2" tabindex="0" hidefocus="true" treenode=""><span id="treeZhiBiao_19_switch" title="" class="button level2 switch noline_docu" treenode_switch=""></span><a id="treeZhiBiao_19_a" class="level2" treenode_a="" onclick="" target="_blank" style="" title="建筑业企业房屋建筑竣工面积"><span id="treeZhiBiao_19_ico" title="" treenode_ico="" class="button ico_docu" style=""></span><span id="treeZhiBiao_19_span">建筑业企业房屋建筑竣工面积</span></a></li><li id="treeZhiBiao_20" class="level2" tabindex="0" hidefocus="true" treenode=""><span id="treeZhiBiao_20_switch" title="" class="button level2 switch noline_docu" treenode_switch=""></span><a id="treeZhiBiao_20_a" class="level2" treenode_a="" onclick="" target="_blank" style="" title="建筑业企业房屋建筑竣工价值"><span id="treeZhiBiao_20_ico" title="" treenode_ico="" class="button ico_docu" style=""></span><span id="treeZhiBiao_20_span">建筑业企业房屋建筑竣工价值</span></a></li><li id="treeZhiBiao_21" class="level2" tabindex="0" hidefocus="true" treenode=""><span id="treeZhiBiao_21_switch" title="" class="button level2 switch noline_docu" treenode_switch=""></span><a id="treeZhiBiao_21_a" class="level2" treenode_a="" onclick="" target="_blank" style="" title="建筑业企业总收入"><span id="treeZhiBiao_21_ico" title="" treenode_ico="" class="button ico_docu" style=""></span><span id="treeZhiBiao_21_span">建筑业企业总收入</span></a></li><li id="treeZhiBiao_22" class="level2" tabindex="0" hidefocus="true" treenode=""><span id="treeZhiBiao_22_switch" title="" class="button level2 switch noline_docu" treenode_switch=""></span><a id="treeZhiBiao_22_a" class="level2" treenode_a="" onclick="" target="_blank" style="" title="建筑业企业利润"><span id="treeZhiBiao_22_ico" title="" treenode_ico="" class="button ico_docu" style=""></span><span id="treeZhiBiao_22_span">建筑业企业利润</span></a></li><li id="treeZhiBiao_23" class="level2" tabindex="0" hidefocus="true" treenode=""><span id="treeZhiBiao_23_switch" title="" class="button level2 switch noline_docu" treenode_switch=""></span><a id="treeZhiBiao_23_a" class="level2" treenode_a="" onclick="" target="_blank" style="" title="建筑业企业费用情况"><span id="treeZhiBiao_23_ico" title="" treenode_ico="" class="button ico_docu" style=""></span><span id="treeZhiBiao_23_span">建筑业企业费用情况</span></a></li><li id="treeZhiBiao_24" class="level2" tabindex="0" hidefocus="true" treenode=""><span id="treeZhiBiao_24_switch" title="" class="button level2 switch noline_docu" treenode_switch=""></span><a id="treeZhiBiao_24_a" class="level2" treenode_a="" onclick="" target="_blank" style="" title="建筑业企业资产负债情况"><span id="treeZhiBiao_24_ico" title="" treenode_ico="" class="button ico_docu" style=""></span><span id="treeZhiBiao_24_span">建筑业企业资产负债情况</span></a></li><li id="treeZhiBiao_25" class="level2" tabindex="0" hidefocus="true" treenode=""><span id="treeZhiBiao_25_switch" title="" class="button level2 switch noline_docu" treenode_switch=""></span><a id="treeZhiBiao_25_a" class="level2" treenode_a="" onclick="" target="_blank" style="" title="国有及国有控股建筑业企业建筑业总产值"><span id="treeZhiBiao_25_ico" title="" treenode_ico="" class="button ico_docu" style=""></span><span id="treeZhiBiao_25_span">国有及国有控股建筑业企业建筑业总产值</span></a></li><li id="treeZhiBiao_26" class="level2" tabindex="0" hidefocus="true" treenode=""><span id="treeZhiBiao_26_switch" title="" class="button level2 switch noline_docu" treenode_switch=""></span><a id="treeZhiBiao_26_a" class="level2" treenode_a="" onclick="" target="_blank" style="" title="国有及国有控股建筑业企业签订合同情况"><span id="treeZhiBiao_26_ico" title="" treenode_ico="" class="button ico_docu" style=""></span><span id="treeZhiBiao_26_span">国有及国有控股建筑业企业签订合同情况</span></a></li><li id="treeZhiBiao_27" class="level2" tabindex="0" hidefocus="true" treenode=""><span id="treeZhiBiao_27_switch" title="" class="button level2 switch noline_docu" treenode_switch=""></span><a id="treeZhiBiao_27_a" class="level2" treenode_a="" onclick="" target="_blank" style="" title="国有及国有控股建筑业企业房屋建筑施工面积"><span id="treeZhiBiao_27_ico" title="" treenode_ico="" class="button ico_docu" style=""></span><span id="treeZhiBiao_27_span">国有及国有控股建筑业企业房屋建筑施工面积</span></a></li><li id="treeZhiBiao_28" class="level2" tabindex="0" hidefocus="true" treenode=""><span id="treeZhiBiao_28_switch" title="" class="button level2 switch noline_docu" treenode_switch=""></span><a id="treeZhiBiao_28_a" class="level2" treenode_a="" onclick="" target="_blank" style="" title="国有及国有控股建筑业企业个数、从业人数和劳动生产率"><span id="treeZhiBiao_28_ico" title="" treenode_ico="" class="button ico_docu" style=""></span><span id="treeZhiBiao_28_span">国有及国有控股建筑业企业个数、从业人数和劳动生产率</span></a></li><li id="treeZhiBiao_29" class="level2" tabindex="0" hidefocus="true" treenode=""><span id="treeZhiBiao_29_switch" title="" class="button level2 switch noline_docu" treenode_switch=""></span><a id="treeZhiBiao_29_a" class="level2" treenode_a="" onclick="" target="_blank" style="" title="国有及国有控股建筑业企业房屋建筑竣工面积"><span id="treeZhiBiao_29_ico" title="" treenode_ico="" class="button ico_docu" style=""></span><span id="treeZhiBiao_29_span">国有及国有控股建筑业企业房屋建筑竣工面积</span></a></li><li id="treeZhiBiao_30" class="level2" tabindex="0" hidefocus="true" treenode=""><span id="treeZhiBiao_30_switch" title="" class="button level2 switch noline_docu" treenode_switch=""></span><a id="treeZhiBiao_30_a" class="level2" treenode_a="" onclick="" target="_blank" style="" title="国有及国有控股建筑业企业房屋建筑竣工价值"><span id="treeZhiBiao_30_ico" title="" treenode_ico="" class="button ico_docu" style=""></span><span id="treeZhiBiao_30_span">国有及国有控股建筑业企业房屋建筑竣工价值</span></a></li><li id="treeZhiBiao_31" class="level2" tabindex="0" hidefocus="true" treenode=""><span id="treeZhiBiao_31_switch" title="" class="button level2 switch noline_docu" treenode_switch=""></span><a id="treeZhiBiao_31_a" class="level2" treenode_a="" onclick="" target="_blank" style="" title="国有及国有控股建筑业企业总收入"><span id="treeZhiBiao_31_ico" title="" treenode_ico="" class="button ico_docu" style=""></span><span id="treeZhiBiao_31_span">国有及国有控股建筑业企业总收入</span></a></li><li id="treeZhiBiao_32" class="level2" tabindex="0" hidefocus="true" treenode=""><span id="treeZhiBiao_32_switch" title="" class="button level2 switch noline_docu" treenode_switch=""></span><a id="treeZhiBiao_32_a" class="level2" treenode_a="" onclick="" target="_blank" style="" title="国有及国有控股建筑业企业利润"><span id="treeZhiBiao_32_ico" title="" treenode_ico="" class="button ico_docu" style=""></span><span id="treeZhiBiao_32_span">国有及国有控股建筑业企业利润</span></a></li><li id="treeZhiBiao_33" class="level2" tabindex="0" hidefocus="true" treenode=""><span id="treeZhiBiao_33_switch" title="" class="button level2 switch noline_docu" treenode_switch=""></span><a id="treeZhiBiao_33_a" class="level2" treenode_a="" onclick="" target="_blank" style="" title="国有及国有控股建筑业企业费用情况"><span id="treeZhiBiao_33_ico" title="" treenode_ico="" class="button ico_docu" style=""></span><span id="treeZhiBiao_33_span">国有及国有控股建筑业企业费用情况</span></a></li><li id="treeZhiBiao_34" class="level2" tabindex="0" hidefocus="true" treenode=""><span id="treeZhiBiao_34_switch" title="" class="button level2 switch noline_docu" treenode_switch=""></span><a id="treeZhiBiao_34_a" class="level2" treenode_a="" onclick="" target="_blank" style="" title="国有及国有控股建筑业企业资产负债情况"><span id="treeZhiBiao_34_ico" title="" treenode_ico="" class="button ico_docu" style=""></span><span id="treeZhiBiao_34_span">国有及国有控股建筑业企业资产负债情况</span></a></li></ul></li><li id="treeZhiBiao_6" class="level1" tabindex="0" hidefocus="true" treenode=""><span id="treeZhiBiao_6_switch" title="" class="button level1 switch noline_open" treenode_switch=""></span><a id="treeZhiBiao_6_a" class="level1" treenode_a="" onclick="" target="_blank" style="" title="人民生活"><span id="treeZhiBiao_6_ico" title="" treenode_ico="" class="button ico_open" style=""></span><span id="treeZhiBiao_6_span">人民生活</span></a><ul id="treeZhiBiao_6_ul" class="level1 " style=""><li id="treeZhiBiao_35" class="level2" tabindex="0" hidefocus="true" treenode=""><span id="treeZhiBiao_35_switch" title="" class="button level2 switch noline_docu" treenode_switch=""></span><a id="treeZhiBiao_35_a" class="level2" treenode_a="" onclick="" target="_blank" style="" title="居民收支基本情况(新口径)"><span id="treeZhiBiao_35_ico" title="" treenode_ico="" class="button ico_docu" style=""></span><span id="treeZhiBiao_35_span">居民收支基本情况(新口径)</span></a></li><li id="treeZhiBiao_36" class="level2" tabindex="0" hidefocus="true" treenode=""><span id="treeZhiBiao_36_switch" title="" class="button level2 switch noline_docu" treenode_switch=""></span><a id="treeZhiBiao_36_a" class="level2" treenode_a="" onclick="" target="_blank" style="" title="城镇居民收支基本情况(新口径)"><span id="treeZhiBiao_36_ico" title="" treenode_ico="" class="button ico_docu" style=""></span><span id="treeZhiBiao_36_span">城镇居民收支基本情况(新口径)</span></a></li><li id="treeZhiBiao_37" class="level2" tabindex="0" hidefocus="true" treenode=""><span id="treeZhiBiao_37_switch" title="" class="button level2 switch noline_docu" treenode_switch=""></span><a id="treeZhiBiao_37_a" class="level2" treenode_a="" onclick="" target="_blank" style="" title="农村居民收支基本情况(新口径)"><span id="treeZhiBiao_37_ico" title="" treenode_ico="" class="button ico_docu" style=""></span><span id="treeZhiBiao_37_span">农村居民收支基本情况(新口径)</span></a></li><li id="treeZhiBiao_38" class="level2" tabindex="0" hidefocus="true" treenode=""><span id="treeZhiBiao_38_switch" title="" class="button level2 switch noline_docu" treenode_switch=""></span><a id="treeZhiBiao_38_a" class="level2" treenode_a="" onclick="" target="_blank" style="" title="城镇居民家庭收支基本情况"><span id="treeZhiBiao_38_ico" title="" treenode_ico="" class="button ico_docu" style=""></span><span id="treeZhiBiao_38_span">城镇居民家庭收支基本情况</span></a></li><li id="treeZhiBiao_39" class="level2" tabindex="0" hidefocus="true" treenode=""><span id="treeZhiBiao_39_switch" title="" class="button level2 switch noline_docu" treenode_switch=""></span><a id="treeZhiBiao_39_a" class="level2" treenode_a="" onclick="" target="_blank" style="" title="农村居民家庭收支基本情况"><span id="treeZhiBiao_39_ico" title="" treenode_ico="" class="button ico_docu" style=""></span><span id="treeZhiBiao_39_span">农村居民家庭收支基本情况</span></a></li><li id="treeZhiBiao_40" class="level2" tabindex="0" hidefocus="true" treenode=""><span id="treeZhiBiao_40_switch" title="" class="button level2 switch noline_docu" treenode_switch=""></span><a id="treeZhiBiao_40_a" class="level2" treenode_a="" onclick="" target="_blank" style="" title="外出务工"><span id="treeZhiBiao_40_ico" title="" treenode_ico="" class="button ico_docu" style=""></span><span id="treeZhiBiao_40_span">外出务工</span></a></li></ul></li><li id="treeZhiBiao_7" class="level1" tabindex="0" hidefocus="true" treenode=""><span id="treeZhiBiao_7_switch" title="" class="button level1 switch noline_open" treenode_switch=""></span><a id="treeZhiBiao_7_a" class="level1" treenode_a="" onclick="" target="_blank" style="" title="价格指数"><span id="treeZhiBiao_7_ico" title="" treenode_ico="" class="button ico_open" style=""></span><span id="treeZhiBiao_7_span">价格指数</span></a><ul id="treeZhiBiao_7_ul" class="level1 " style=""><li id="treeZhiBiao_41" class="level2" tabindex="0" hidefocus="true" treenode=""><span id="treeZhiBiao_41_switch" title="" class="button level2 switch noline_docu" treenode_switch=""></span><a id="treeZhiBiao_41_a" class="level2" treenode_a="" onclick="" target="_blank" style="" title="农产品生产价格指数"><span id="treeZhiBiao_41_ico" title="" treenode_ico="" class="button ico_docu" style=""></span><span id="treeZhiBiao_41_span">农产品生产价格指数</span></a></li><li id="treeZhiBiao_42" class="level2" tabindex="0" hidefocus="true" treenode=""><span id="treeZhiBiao_42_switch" title="" class="button level2 switch noline_docu" treenode_switch=""></span><a id="treeZhiBiao_42_a" class="level2" treenode_a="" onclick="" target="_blank" style="" title="固定资产投资价格指数_当季"><span id="treeZhiBiao_42_ico" title="" treenode_ico="" class="button ico_docu" style=""></span><span id="treeZhiBiao_42_span">固定资产投资价格指数_当季</span></a></li><li id="treeZhiBiao_43" class="level2" tabindex="0" hidefocus="true" treenode=""><span id="treeZhiBiao_43_switch" title="" class="button level2 switch noline_docu" treenode_switch=""></span><a id="treeZhiBiao_43_a" class="level2" treenode_a="" onclick="" target="_blank" style="" title="固定资产投资价格指数_累计值"><span id="treeZhiBiao_43_ico" title="" treenode_ico="" class="button ico_docu" style=""></span><span id="treeZhiBiao_43_span">固定资产投资价格指数_累计值</span></a></li></ul></li></ul></li></ul>
+              </div>
+
+            </div>
+            <!-- main-left 结束"-->
+
+            <!-- main-right 开始-->
+            <div class="main-right right split-containe">
+                <!-- mr-header 开始-->
+                <div class="mr-header">
+                    <ul class="ul-view left createtype">
+                        <li onclick="tuOff()"><a href="javascript:;" class="list" title="报表"></a></li>
+                        <li class="drawTu" val="bar"><a href="javascript:;" class="line" title="柱线图"></a></li>
+                        <li class="drawTu" val="y-bar"><a href="javascript:;" class="bar" title="条形图"></a></li>
+                        <li class="drawTu" val="pie"><a href="javascript:;" class="pie" title="饼图"></a></li>
+                    </ul>
+                    <div class="right" id="divdroplist"><div id="mySelect_sj" style="margin: 7px 10px 0 20px; float: left" wdcode="sj" wdname="时间"><div class="wdName">时间 ： </div><div class="dtHtml"><div class="dtHead" node="{&quot;code&quot;:&quot;LAST6&quot;,&quot;name&quot;:&quot;最近6季度&quot;,&quot;sort&quot;:&quot;4&quot;}" title="最近6季度">最近6季度</div><div class="dtBody" style="display: none;"><div class="dtDrag"></div><div class="dtList"><ul><li node="{&quot;code&quot;:&quot;LAST6&quot;,&quot;name&quot;:&quot;最近6季度&quot;,&quot;sort&quot;:&quot;4&quot;}" code="LAST6" title="最近6季度">最近6季度</li><li node="{&quot;code&quot;:&quot;LAST12&quot;,&quot;name&quot;:&quot;最近12季度&quot;,&quot;sort&quot;:&quot;4&quot;}" code="LAST12" title="最近12季度">最近12季度</li><li node="{&quot;code&quot;:&quot;LAST18&quot;,&quot;name&quot;:&quot;最近18季度&quot;,&quot;sort&quot;:&quot;4&quot;}" code="LAST18" title="最近18季度" style="border-bottom: none;">最近18季度</li></ul></div><div class="dtFoot"><input class="dtText" type="text" maxlength="50" /><div class="dtTextBtn">确定</div><div class="nodeErrorInfo"><p class="first">例：输入格式如下</p><p>月：201201,201205</p><p>季：2012A,2012B</p><p class="nbsp">2012C,2012D</p><p></p><p>年：2012,2013</p><p>其他：2013-,last10</p></div><div class="nodeArrow"></div></div></div></div></div></div>
+                </div>                
+                <!-- mr-header 结束-->
+
+                <!-- mr-content 开始 -->
+                <div class="mr-content">
+                	<div id="initIndexCharts" class="hide" style="display: none;">
+		                <div class="editarea pr">
+		                	<div class="right tishi mr20"><img src="images/icon-1.png" />提示</div>
+		                	<div class="pa tishiBox tc">说明：如果所选的作图项过多，可能会影响图例的正常显示。<em></em></div>
+		                    <a class="bt_edit mr20" href="javascript:getChart();">编辑</a>
+		                    <ul id="changerow_col">
+		                        <li><input name="tuname" id="_row" class="vm" type="radio" value="row" checked="checked" /><label for="_row"> 行</label></li>
+		                        <li><input name="tuname" id="_col" class="vm" type="radio" value="col" /><label for="_col"> 列</label></li>
+		                    </ul>
+		                </div>
+						<div id="chart" _echarts_instance_="1521017532264"><div style="position: relative; overflow: hidden; width: 680px; height: 400px;"><div width="680" height="400" data-zr-dom-id="bg" style="position: absolute; left: 0px; top: 0px; width: 680px; height: 400px; user-select: none;"></div><canvas width="680" height="400" data-zr-dom-id="_zrender_hover_" style="position: absolute; left: 0px; top: 0px; width: 680px; height: 400px; user-select: none;"></canvas></div></div>
+					</div>
+					
+                    <div class="table-container"><div class="lockTable_container" style="width: 692px; overflow: hidden;position: relative;"><div class="table_container_fix" style="overflow: hidden; position: absolute; z-index: 100; top: 0px; left: 0px; height: 30px; width: 692px;"><table class="public_table table_fix" cellspacing="0" cellpadding="0" width="100%" style="width: 692px;"><thead><tr class="tr-title"><th style="text-align:center;"><strong>指标</strong><span class="" code="zb"></span></th></tr></thead><tbody><tr><td class=""><a class="zbExp" exp="" href="javascript:void(0);"><img src="images/icon-1.png" /></a>照相机销售量_累计值(万台)</td></tr><tr><td class=""><a class="zbExp" exp="" href="javascript:void(0);"><img src="images/icon-1.png" /></a>照相机产销率_累计值(%)</td></tr><tr><td class=""><a class="zbExp" exp="" href="javascript:void(0);"><img src="images/icon-1.png" /></a>照相机产销率比上年同期增减(百分点)</td></tr><tr><td class=""><a class="zbExp" exp="" href="javascript:void(0);"><img src="images/icon-1.png" /></a>照相机期末库存比年初增减(%)</td></tr></tbody></table></div><div class="table_container_head" style="overflow: hidden; position: absolute; z-index: 50; top: 0px; left: 0px; height: 30px; width: 692px;"><table class="public_table table_head" cellspacing="0" cellpadding="0" width="100%" style="width: 692px;"><thead><tr class="tr-title"><th style="text-align:center;"><strong>指标</strong><span class="" code="zb"></span></th></tr></thead><tbody><tr><td class=""><a class="zbExp" exp="" href="javascript:void(0);"><img src="images/icon-1.png" /></a>照相机销售量_累计值(万台)</td></tr><tr><td class=""><a class="zbExp" exp="" href="javascript:void(0);"><img src="images/icon-1.png" /></a>照相机产销率_累计值(%)</td></tr><tr><td class=""><a class="zbExp" exp="" href="javascript:void(0);"><img src="images/icon-1.png" /></a>照相机产销率比上年同期增减(百分点)</td></tr><tr><td class=""><a class="zbExp" exp="" href="javascript:void(0);"><img src="images/icon-1.png" /></a>照相机期末库存比年初增减(%)</td></tr></tbody></table></div><div class="table_container_column" style="overflow: hidden; position: absolute; z-index: 40; top: 0px; left: 0px; width: 692px;"><table class="public_table table_column" cellspacing="0" cellpadding="0" width="100%" style="width: 692px;"><thead><tr class="tr-title"><th style="text-align:center;"><strong>指标</strong><span class="" code="zb"></span></th></tr></thead><tbody><tr><td class=""><a class="zbExp" exp="" href="javascript:void(0);"><img src="images/icon-1.png" /></a>照相机销售量_累计值(万台)</td></tr><tr><td class=""><a class="zbExp" exp="" href="javascript:void(0);"><img src="images/icon-1.png" /></a>照相机产销率_累计值(%)</td></tr><tr><td class=""><a class="zbExp" exp="" href="javascript:void(0);"><img src="images/icon-1.png" /></a>照相机产销率比上年同期增减(百分点)</td></tr><tr><td class=""><a class="zbExp" exp="" href="javascript:void(0);"><img src="images/icon-1.png" /></a>照相机期末库存比年初增减(%)</td></tr></tbody></table></div><div class="table_container_main" style="overflow: auto; width: 692px; position: relative; height: 300px;"><table class="public_table table_main" cellspacing="0" cellpadding="0" width="100%" id="table_main"><thead><tr class="tr-title"><th style="text-align:center;"><strong>指标</strong><span class="" code="zb"></span></th></tr></thead><tbody><tr><td class=""><a class="zbExp" exp="" href="javascript:void(0);"><img src="images/icon-1.png" /></a>照相机销售量_累计值(万台)</td></tr><tr><td class=""><a class="zbExp" exp="" href="javascript:void(0);"><img src="images/icon-1.png" /></a>照相机产销率_累计值(%)</td></tr><tr><td class=""><a class="zbExp" exp="" href="javascript:void(0);"><img src="images/icon-1.png" /></a>照相机产销率比上年同期增减(百分点)</td></tr><tr><td class=""><a class="zbExp" exp="" href="javascript:void(0);"><img src="images/icon-1.png" /></a>照相机期末库存比年初增减(%)</td></tr></tbody></table></div></div></div><div class="expShow"><div class="zhu">注：</div><div class="explist"><dl><dd>因统计产品目录调整，自2016年起不再发布。</dd></dl></div></div>
+                    
+                </div>
+                <!-- mr-content 结束 -->
+            </div>
+            <!-- main-right 结束-->
+            <div class="clear split-containe"></div>
+        <div class="splitbar" style="top: 200px; left: 252px;"></div></div>
+
+    </div>
+    <!-- main_content 结束-->
+</div>
+<!-- main 结束 -->
+
+
+<!-- 引入页尾 -->
+
+
+
+
+
+
+<!-- 在线留言开始 -->
+<script type="text/javascript" src="/js/tips/js/tipsBox.js"></script>
+<script src="/js/message/messagePop.js" type="text/javascript"></script>
+<script type="text/javascript">
+	var basePath="";
+	//提交留言
+	function addMsg(){
+		var username = $.trim($("#usrname").val());
+		var phone = $.trim($("#phone").val());
+		var email = $.trim($("#email").val());
+		var subject = $.trim($("#subject").val());
+		var content = $.trim($("#detail").val());
+		if(username == ""){
+			alert("姓名不能为空！");
+		} else if(username.length &gt; 100){
+			alert("姓名不能超过100个字符！");
+		} else if(phone ==""){
+			alert("电话号码不能为空！");
+		} else if(phone!="" &amp;&amp; !(/^(0[0-9]{2,3}\-)?([2-9][0-9]{6,7})+(\-[0-9]{1,4})?$|(^(13[0-9]|15[0|3|6|7|8|9]|18[8|9])\d{8}$)/.test(phone))){
+			alert("请输入正确的电话号码!\n如：0591-6487256,1581064****");
+		} else if(email == ""){
+			alert("电子邮件不能为空！");
+		} else if(email.length &gt; 100){
+			alert("电子邮件不能超过100个字符！");
+		} else if(!(/^([0-9a-zA-Z-_]){4,}@([0-9a-zA-Z])+((\.)[0-9a-zA-Z]+){1,2}$/.test(email))){
+			alert("电子邮件格式不正确！邮箱@符号之前最少4个字符。");
+		} else if(subject.length &gt; 100){
+			alert("留言主题不能超过100个字符！");
+		} else if(content == ""){
+			alert("留言内容不能为空！");
+		} else if(content.length &gt; 500){
+			alert("留言内容不能超过500个字符！");
+		} else{
+			$.ajax({
+		        url :basePath+"/msg.htm",
+		        type : 'POST',
+		        data : {
+		        	m : "addMsg",
+		        	username : username,
+		        	phone : phone,
+		        	email : email,
+		        	subject : subject,
+		        	content : content
+		        },
+		        success : function(data){
+		            if(data){
+		            	alert("留言成功！");
+		            	$(".closeBtn").trigger("click");
+		            }else{
+		            	alert("操作失败！");
+		            }
+		        }
+		    });
+		}
+	}
+	
+	//取消留言
+	function cancelMsg(){
+		$(".closeBtn").trigger("click");
+	}
+
+    //弹出留言板
+	function showMessagePop(){
+      	//弹出收藏夹
+      	$.tips({
+			title : '在线留言',			
+			content : messageDiv,		
+			width : 650,				
+			height : 400,
+			drag : true,			
+			isCopy : false			
+		});	
+      	
+      	//同步请求用户session数据
+    	$.ajaxSettings.async = false;
+      	$.getJSON(basePath+"/msg.htm", function(json){
+      		if(json!=null){
+      			$("#email").val(json.name);
+          		$("#phone").val(json.phone);
+      		}
+ 		});
+	};
+</script>
+<!-- 在线留言结束 -->
+
+
+<!--footer-->
+<div id="footer">
+	<div class="cpr">
+		<ul>
+			<li class="tittle">统计法规</li>
+			<li><img src="images/footLine.jpg" border="0" /></li>
+			<li><a href="http://www.stats.gov.cn/zjtj/tjfg/tjfl/200906/t20090629_8791.html" target="_blank">《统计法》</a></li>
+			<li><a href="http://www.stats.gov.cn/statsinfo/auto2072/201708/t20170803_1519739.html" target="_blank">统计法实施细则</a></li>
+			<li><a href="http://www.stats.gov.cn/zjtj/tjfg/xzfg/201005/t20100528_36036.html" target="_blank">人口普查条例</a></li>
+			<li><a href="http://www.stats.gov.cn/zjtj/tjfg/xzfg/200409/t20040913_36028.html" target="_blank">经济普查条例</a></li>
+			<li><a href="http://www.stats.gov.cn/zjtj/tjfg/gz/200904/t20090428_8810.html" target="_blank">统计违法违纪行为处分规定</a></li>
+			<li><a href="http://www.stats.gov.cn/statsinfo/auto2072/201708/t20170803_1519666.html" target="_blank">统计调查证管理办法</a></li>
+			<li><a href="http://www.stats.gov.cn/zjtj/tjfg/gz/200410/t20041018_8797.html" target="_blank">涉外调查管理办法</a></li>
+		</ul>
+	</div>
+	<div class="cpr">
+		<ul>
+			<li class="tittle">标准制度</li>
+			<li><img src="images/footLine.jpg" border="0" /></li>
+			<li><a href="http://www.stats.gov.cn/tjsj/tjbz/201301/t20130114_8675.html" target="_blank">国民经济行业分类</a></li>
+			<li><a href="http://www.stats.gov.cn/tjsj/tjzd/gjtjzd/201701/t20170109_1451479.html" target="_blank">国民经济核算统计报表制度</a></li>
+			<li><a href="http://www.stats.gov.cn/tjsj/tjzd/gjtjzd/201701/t20170109_1451478.html" target="_blank">基本单位统计报表制度</a></li>
+			<li><a href="http://www.stats.gov.cn/tjsj/tjzd/gjtjzd/201701/t20170109_1451476.html" target="_blank">农林牧渔业统计调查制度</a></li>
+			<li><a href="http://www.stats.gov.cn/tjsj/tjzd/gjtjzd/201701/t20170109_1451473.html" target="_blank">工业统计报表制度</a></li>
+			<li><a href="http://www.stats.gov.cn/tjsj/tjzd/gjtjzd/201701/t20170109_1451375.html" target="_blank">价格统计报表制度</a></li>
+			<li><a href="http://www.stats.gov.cn/tjsj/tjzd/gjtjzd/index_1.html" target="_blank">更多制度&gt;&gt;</a></li>
+		</ul>
+	</div>
+	<div class="cpr">
+		<ul>
+			<li class="tittle">统计数据生产过程</li>
+			<li><img src="images/footLine.jpg" border="0" /></li>
+			<li><a href="http://www.stats.gov.cn/tjzs/spdb/tjxcycb/201009/t20100920_57067.html" target="_blank">国内生产总值（GDP）</a></li>
+			<li><a href="http://www.stats.gov.cn/tjzs/spdb/tjxcycb/201009/t20100920_57066.html" target="_blank">居民消费者价格指数（CPI）</a></li>
+			<li><a href="http://www.stats.gov.cn/tjzs/spdb/tjxcycb/201109/t20110914_57080.html" target="_blank">生产者价格指数（PPI）</a></li>
+			<li><a href="http://www.stats.gov.cn/tjzs/spdb/tjxcycb/201209/t20120919_57095.html" target="_blank">工业生产增长速度</a></li>
+			<li><a href="http://www.stats.gov.cn/tjzs/spdb/tjxcycb/201209/t20120919_57096.html" target="_blank">固定资产投资</a></li>
+			<li><a href="http://www.stats.gov.cn/tjzs/spdb/tjxcycb/201209/t20120919_57097.html" target="_blank">社会消费品零售总额</a></li>
+			<li><a href="http://www.stats.gov.cn/tjzs/spdb/tjxcycb/201109/t20110914_57081.html" target="_blank">粮食产量</a></li>
+			<li><a href="http://www.stats.gov.cn/tjzs/spdb/tjxcycb/201109/t20110915_57082.html" target="_blank">城乡居民收入与支出</a></li>
+		</ul>
+	</div>
+	<div class="cpr02">
+		<ul>
+			<li class="tittle">在线电话</li>
+			<li>咨询电话：010-68576320</li>
+			<li class="tittle"></li>
+			<li>周一至周五上午8：00-11:30,下午1:00-5:00</li>
+			<li class="tittle pheight"><a href="/staticreq.htm?m=aboutctryinfo" target="_blank"> 关于国家数据 </a></li>
+			<li>版权所有：中华人民共和国国家统计局</li>
+			<li>京ICP备05034670号</li>
+			<li>地址：北京市西城区月坛南街57号（100826）</li>
+		</ul>
+	</div>
+	<div class="clear"></div>
+</div>
+<script type="text/javascript" src="/js/echarts.2.0.4.min.js"></script>
+<script type="text/javascript" src="/js/chart/js/draw.js"></script>
+
+<div class="navsubmenustyle" style="z-index: 2000; left: 0px; top: 0px; visibility: hidden;"><ul id="menuE01" style="visibility: hidden;"><li><a href="/easyquery.htm?cn=E0101">分省月度数据</a>
+</li>
+<li><a href="/easyquery.htm?cn=E0102">分省季度数据</a>
+</li>
+<li><a href="/easyquery.htm?cn=E0103">分省年度数据</a>
+</li>
+<li><a href="/easyquery.htm?cn=E0104">主要城市月度价格</a>
+</li>
+<li><a href="/easyquery.htm?cn=E0105">主要城市年度数据</a>
+</li>
+</ul></div><div class="navsubmenustyle" style="z-index: 2000; left: 0px; top: 0px; visibility: hidden;"><ul id="menuG01" style="visibility: hidden;"><li><a href="/easyquery.htm?cn=G0101">主要国家(地区)月度数据</a>
+</li>
+<li><a href="/easyquery.htm?cn=G0102">三大经济体月度数据</a>
+</li>
+<li><a href="/easyquery.htm?cn=G0103">国际市场月度商品价格</a>
+</li>
+<li><a href="/easyquery.htm?cn=G0104">主要国家(地区)年度数据</a>
+</li>
+<li><a href="/gwwz.htm">国际组织网站</a>
+</li>
+<li><a href="/gjwz.htm">各国统计网站</a>
+</li>
+</ul></div><div class="RMenu"><ul class="RMenu-left"><li class="icon-new"></li><li class="icon-cut"></li><li class="icon-paste"></li><li class="icon-rename"></li><li class="icon-delete"></li></ul><ul class="RMenu-right"><li class="li-new"><a href="javascript:void(0)" class="new">新建</a><span>新建</span></li><li class="li-cut"><a href="javascript:void(0)" class="cut">剪切</a><span>剪切</span></li><li class="li-paste"><a href="javascript:void(0)" class="paste">粘贴</a><span>粘贴</span></li><li class="li-rename"><a href="javascript:void(0)" class="rename">重命名</a><span>重命名</span></li><li class="li-delete"><a href="javascript:void(0)" class="delete">删除</a><span>删除</span></li></ul></div><div class="RMenuNewView"><div class="titleBar"><span class="close"></span></div><div class="newCon"><label>名称：</label><input type="text" class="RMenuNewName" maxlength="20" /> </div></div><div class="navsubmenustyle" style="z-index: 2000; left: 0px; top: 0px; visibility: hidden;"><ul id="menuE02" style="visibility: hidden;">
+				<li id="addIndexLi"><a href="javascript:void(0);">新增指标</a></li>
+				<li id="filterLi"><a href="javascript:void(0);">筛选</a></li>
+				<li><a href="javascript:void(0);"><img src="js/nav/images/arrow-right.gif" class="rightarrowpointer" style="width: 6px; height: 9px; left: 136px;" />统计</a>
+					
+				<div style="left: 0px; top: 0px; visibility: hidden;"><ul style="visibility: hidden;">
+					    <li><a href="javascript:void(0);"><img src="js/nav/images/arrow-right.gif" class="rightarrowpointer" style="width: 6px; height: 9px; left: 136px;" />对行运算</a>
+					        
+					    <div style="left: 0px; top: 0px; visibility: hidden;"><ul style="visibility: hidden;">
+					            <li><a href="javascript:void(0);" onclick="sum('row')">SUM求和</a></li>
+					            <li><a href="javascript:void(0);" onclick="avg('row')"><img height="10" width="9" src="/theme/pic/pjz.png" />平均值</a></li>
+					            <li><a href="javascript:void(0);" onclick="max('row')">MAX最大值</a></li>
+					            <li><a href="javascript:void(0);" onclick="min('row')">MIN最小值</a></li>
+					            <li><a href="javascript:void(0);" onclick="mid('row')">Md中位数</a></li>
+					            <li><a href="javascript:void(0);" onclick="mod('row')">MO众数</a></li>
+					            <li><a href="javascript:void(0);" onclick="s2('row')">S<sup>2</sup>方差</a></li>
+					            <li><a href="javascript:void(0);" onclick="sd('row')">S标准差</a></li>
+					        </ul></div></li>
+					    <li><a href="javascript:void(0);"><img src="js/nav/images/arrow-right.gif" class="rightarrowpointer" style="width: 6px; height: 9px; left: 136px;" /><strong class="mr10">对列运算</strong></a>
+					        
+					    <div style="left: 0px; top: 0px; visibility: hidden;"><ul style="visibility: hidden;">
+					            <li><a href="javascript:void(0);" onclick="sum('col')">SUM求和</a></li>
+					            <li><a href="javascript:void(0);" onclick="avg('col')"><img height="10" width="9" src="/theme/pic/pjz.png" />平均值</a></li>
+					            <li><a href="javascript:void(0);" onclick="max('col')">MAX最大值</a></li>
+					            <li><a href="javascript:void(0);" onclick="min('col')">MIN最小值</a></li>
+					            <li><a href="javascript:void(0);" onclick="mid('col')">Md中位数</a></li>
+					            <li><a href="javascript:void(0);" onclick="mod('col')">MO众数</a></li>
+					            <li><a href="javascript:void(0);" onclick="s2('col')">S<sup>2</sup>方差</a></li>
+					            <li><a href="javascript:void(0);" onclick="sd('col')">S标准差</a></li>
+					        </ul></div></li>
+					</ul></div></li>
+				<li><a href="javascript:void(0);" onclick="restore()">恢复</a></li>
+				<li><a href="javascript:void(0);" id="trimTable" onclick="trimTable()">去除空行空列</a></li>
+			</ul></div><div class="navsubmenustyle" style="z-index: 2000; left: 0px; top: 0px; visibility: hidden;"><ul id="menuG02" style="visibility: hidden;">
+				<li><a href="javascript:void(0);" id="edit">编辑</a></li>
+				<li><a href="javascript:void(0);" onclick="transdata()">转置</a></li>
+				<li><a href="javascript:void(0);" id="webDuSwop">维度转换</a></li>
+				<li><a href="javascript:dowhere('save');">保存默认</a></li>
+				<li><a href="javascript:dowhere('del');">恢复默认</a></li>
+			</ul></div></body></html>
